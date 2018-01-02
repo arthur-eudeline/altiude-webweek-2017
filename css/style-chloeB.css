@@ -1,0 +1,1240 @@
+/* line 8, ../scss/style-chloeB.scss */
+html, body {
+  font-size: 16px; }
+
+/* line 12, ../scss/style-chloeB.scss */
+h1, h2, h3, h4 {
+  text-transform: uppercase; }
+
+/* line 16, ../scss/style-chloeB.scss */
+sup {
+  text-transform: none; }
+
+/* --- NAVBAR --- */
+/* line 22, ../scss/style-chloeB.scss */
+.navbar {
+  background-color: #305BFF;
+  padding: 0;
+  margin-bottom: 0;
+  font-family: IBMRegular;
+  font-size: 0.8em;
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px; }
+  /* line 33, ../scss/style-chloeB.scss */
+  .navbar #menu-trig {
+    border-left: none !important;
+    font-size: 2em;
+    float: left;
+    color: #FFF;
+    padding: 27px; }
+  /* line 41, ../scss/style-chloeB.scss */
+  .navbar .brand {
+    margin-top: 20px;
+    border-left: none !important;
+    font-size: 2.5em;
+    color: #FFF;
+    background-image: url(../image/LOGO.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center; }
+    /* line 51, ../scss/style-chloeB.scss */
+    .navbar .brand a {
+      color: #FFF;
+      opacity: 0.8;
+      transition: 0.5s;
+      padding: 0;
+      margin: 0;
+      padding: 20px;
+      text-align: left;
+      width: 100%;
+      display: block; }
+      /* line 62, ../scss/style-chloeB.scss */
+      .navbar .brand a:hover {
+        opacity: 1;
+        text-decoration: none;
+        color: #39ca74; }
+  /* line 70, ../scss/style-chloeB.scss */
+  .navbar ul {
+    text-align: right;
+    padding: 0;
+    margin: 0; }
+    /* line 75, ../scss/style-chloeB.scss */
+    .navbar ul li {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      text-align: center;
+      transition: 0.5s;
+      border-left: 1px solid rgba(255, 255, 255, 0.2); }
+      /* line 84, ../scss/style-chloeB.scss */
+      .navbar ul li a {
+        color: #FFF;
+        opacity: 0.8;
+        transition: 0.5s;
+        padding: 0;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        display: block; }
+      /* line 96, ../scss/style-chloeB.scss */
+      .navbar ul li:hover a {
+        opacity: 1;
+        text-decoration: none;
+        color: #39ca74; }
+      /* line 102, ../scss/style-chloeB.scss */
+      .navbar ul li span {
+        font-size: 1.2em;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 5px;
+        color: #FFF;
+        opacity: 0.9;
+        transition: 0.5s;
+        display: block; }
+      /* line 114, ../scss/style-chloeB.scss */
+      .navbar ul li:hover span {
+        opacity: 1;
+        color: #39ca74; }
+
+/* --- /NAVBAR --- */
+/* ------------------------------ */
+/* --- FOOTER --- */
+/* line 127, ../scss/style-chloeB.scss */
+.footer {
+  margin-top: 80px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #305BFF;
+  color: #FFF; }
+  /* line 134, ../scss/style-chloeB.scss */
+  .footer p {
+    font-size: 0.8em;
+    font-family: IBMExtraLight; }
+  /* line 140, ../scss/style-chloeB.scss */
+  .footer h4 {
+    font-size: 1em;
+    font-family: IBMSemiBold; }
+  /* line 145, ../scss/style-chloeB.scss */
+  .footer .copyright {
+    bottom: 0;
+    font-size: 0.7em; }
+  /* line 150, ../scss/style-chloeB.scss */
+  .footer .social-media {
+    padding: 5px;
+    color: #FFF;
+    transition-duration: 0.5s; }
+    /* line 155, ../scss/style-chloeB.scss */
+    .footer .social-media:hover {
+      opacity: 0.5; }
+
+/* ------------------------------ */
+/* ---- BOUTONS VERTS : btn-vert  ---- */
+/* line 165, ../scss/style-chloeB.scss */
+.btn-vert {
+  background-color: #39ca74;
+  color: #FFF;
+  font-family: IBMLight;
+  transition-duration: 0.5s; }
+
+/* line 172, ../scss/style-chloeB.scss */
+.btn-vert:hover {
+  background-color: transparent;
+  border: 1px solid #39ca74;
+  color: #39ca74; }
+
+/* ------------------------------ */
+/* ---- BOUTONS BLANC : btn-blanc  ---- */
+/* line 181, ../scss/style-chloeB.scss */
+.btn-blanc {
+  background-color: transparent;
+  border: 1px solid #39ca74;
+  font-family: IBMLight;
+  color: #39ca74;
+  transition-duration: 0.5s; }
+
+/* line 189, ../scss/style-chloeB.scss */
+.btn-blanc:hover {
+  background-color: #39ca74;
+  color: #FFF; }
+
+/* ------------------------------ */
+/* --- SHADOW DES DIVISIONS : box-shadow --- */
+/* line 198, ../scss/style-chloeB.scss */
+.box-shadow {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5); }
+
+/* ------------------------------ */
+/* ------- PAGE CONTACT -------- */
+/* ------------------------------ */
+/* line 208, ../scss/style-chloeB.scss */
+.page-contact h3 {
+  font-family: IBMMedium;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  font-size: 1.5em; }
+
+/* ------------------------------ */
+/* --- Fomulaire --- */
+/* line 218, ../scss/style-chloeB.scss */
+.formulaire p {
+  padding-top: 25px;
+  color: #888888;
+  font-size: 0.8em; }
+
+/* line 224, ../scss/style-chloeB.scss */
+.formulaire .btn {
+  margin-top: 30px; }
+
+/* line 228, ../scss/style-chloeB.scss */
+.formulaire .box-answer {
+  background-color: #F4F4F4;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 5px; }
+
+/* line 236, ../scss/style-chloeB.scss */
+.formulaire {
+  height: 450px;
+  font-family: IBMRegular;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 20px;
+  position: relative; }
+
+/* line 246, ../scss/style-chloeB.scss */
+.formulaire .photo {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  position: absolute;
+  height: 100%; }
+
+/* ------------------------------ */
+/* ------- PAGE RECHERCHE -------- */
+/* ------------------------------ */
+/* line 265, ../scss/style-chloeB.scss */
+.page-recherche {
+  font-family: IBMRegular; }
+
+/* line 269, ../scss/style-chloeB.scss */
+.bandeau-haut {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+/* line 274, ../scss/style-chloeB.scss */
+.bandeau-haut h3 {
+  font-family: IBMMedium;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0; }
+
+/* line 281, ../scss/style-chloeB.scss */
+.bandeau-haut .form-control {
+  background-color: #F4F4F4;
+  color: #888888;
+  border: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+/* line 288, ../scss/style-chloeB.scss */
+.bandeau-haut .btn {
+  background-color: #F4F4F4;
+  border: none;
+  border-left: 1px solid #DDDDDD;
+  border-top: 1px solid #F4F4F4;
+  border-bottom: 1px solid #F4F4F4;
+  border-right: 1px solid #F4F4F4;
+  color: #888888; }
+
+/* ------------------------------ */
+/* ------- RESULTAT -------- */
+/* line 303, ../scss/style-chloeB.scss */
+.box-resultat {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-right: 0;
+  height: 200px;
+  overflow: hidden; }
+  /* line 310, ../scss/style-chloeB.scss */
+  .box-resultat .image {
+    padding: 0;
+    position: relative;
+    height: 200px; }
+    /* line 315, ../scss/style-chloeB.scss */
+    .box-resultat .image p {
+      text-align: left; }
+      /* line 317, ../scss/style-chloeB.scss */
+      .box-resultat .image p i {
+        color: #FFF;
+        padding: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-right: 3px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.5); }
+    /* line 329, ../scss/style-chloeB.scss */
+    .box-resultat .image img {
+      position: absolute;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+      z-index: -1; }
+  /* line 338, ../scss/style-chloeB.scss */
+  .box-resultat h2 {
+    letter-spacing: -0.1em;
+    text-align: right;
+    color: #305BFF;
+    margin-bottom: 0; }
+    /* line 344, ../scss/style-chloeB.scss */
+    .box-resultat h2 sup {
+      position: relative;
+      font-size: .5em;
+      vertical-align: middle;
+      letter-spacing: normal;
+      color: #888888; }
+  /* line 353, ../scss/style-chloeB.scss */
+  .box-resultat h4 {
+    text-align: right;
+    color: #888888;
+    margin-top: 0; }
+  /* line 359, ../scss/style-chloeB.scss */
+  .box-resultat p {
+    font-size: 0.6em; }
+  /* line 364, ../scss/style-chloeB.scss */
+  .box-resultat .summury {
+    overflow: hidden;
+    font-size: 0.8em;
+    text-align: right;
+    color: #888888;
+    height: 56px; }
+  /* line 372, ../scss/style-chloeB.scss */
+  .box-resultat .btn {
+    margin-top: 5px;
+    font-size: 0.8em;
+    width: 100%; }
+  /* line 378, ../scss/style-chloeB.scss */
+  .box-resultat h3 {
+    color: #FFF;
+    font-size: 1.2em;
+    font-family: IBMMedium;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px; }
+  /* line 388, ../scss/style-chloeB.scss */
+  .box-resultat .bouton {
+    margin: 0;
+    padding: 1px; }
+
+/* ------------------------------ */
+/* ------- BOUTON AFFICHER PLUS -------- */
+/* line 399, ../scss/style-chloeB.scss */
+.btn-plus .btn {
+  font-size: 0.8em;
+  margin: 30px 0; }
+
+/* ------------------------------ */
+/* ------- MENU FILTRE  -------- */
+/* line 407, ../scss/style-chloeB.scss */
+.filtre {
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+  margin-top: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px; }
+
+/* line 418, ../scss/style-chloeB.scss */
+.filtre .title-menu {
+  margin: 0;
+  padding: 15px;
+  padding-left: 30px;
+  border-top-right-radius: 15px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  color: #888888; }
+
+/* line 428, ../scss/style-chloeB.scss */
+.filtre .title-menu h4 {
+  font-size: 1em; }
+
+/* line 432, ../scss/style-chloeB.scss */
+.filtre form {
+  padding-left: 30px;
+  color: #305BFF;
+  font-size: 0.8em; }
+
+/* line 438, ../scss/style-chloeB.scss */
+.filtre form .categorie-title {
+  font-size: 1em;
+  color: #888888;
+  margin-top: 20px;
+  text-transform: uppercase; }
+
+/* -- Select  -- */
+/* line 447, ../scss/style-chloeB.scss */
+.filtre form select {
+  border: 1px solid #305BFF;
+  background-color: #FFF;
+  color: #305BFF; }
+
+/* -- Checkbox  -- */
+/* line 456, ../scss/style-chloeB.scss */
+input[type=checkbox].custom-check {
+  display: none; }
+
+/* line 461, ../scss/style-chloeB.scss */
+label.custum-radio input[type="radio"] {
+  display: none; }
+/* line 465, ../scss/style-chloeB.scss */
+label.custum-radio span:before {
+  content: '\f10c';
+  font-family: 'FontAwesome';
+  display: inline-block;
+  margin-right: 8px; }
+/* line 472, ../scss/style-chloeB.scss */
+label.custum-radio input[type="radio"]:checked + span:before {
+  content: '\f05d'; }
+
+/* line 479, ../scss/style-chloeB.scss */
+label.custom-check {
+  display: block; }
+
+/* line 484, ../scss/style-chloeB.scss */
+label.custom-check:before {
+  content: '\f096';
+  font-family: 'FontAwesome';
+  display: inline-block;
+  margin-right: 5px; }
+
+/* line 491, ../scss/style-chloeB.scss */
+input[type=checkbox].custom-check:checked + label.custom-check:before {
+  content: '\f046';
+  margin-right: 3px; }
+
+/* line 496, ../scss/style-chloeB.scss */
+form ul {
+  text-decoration: none;
+  list-style: none; }
+
+/* line 503, ../scss/style-chloeB.scss */
+#menu {
+  padding: 0; }
+
+/* line 507, ../scss/style-chloeB.scss */
+#menu .choose {
+  border-bottom: 1px solid #305BFF;
+  padding-bottom: 5px;
+  margin-bottom: 10px; }
+
+/* line 513, ../scss/style-chloeB.scss */
+#menu li ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  padding-left: 10px; }
+
+/* line 522, ../scss/style-chloeB.scss */
+input[type=checkbox].list-box {
+  display: none; }
+
+/* line 526, ../scss/style-chloeB.scss */
+label.list-box {
+  display: block; }
+
+/* line 532, ../scss/style-chloeB.scss */
+input[type=checkbox].list-box:checked + label.list-box:before + ul {
+  height: 0;
+  overflow: hidden; }
+
+/* line 537, ../scss/style-chloeB.scss */
+#menu li.is-open ul {
+  max-height: 10vh; }
+
+/* -- Range  -- */
+/* line 543, ../scss/style-chloeB.scss */
+.range-wrapper {
+  position: relative;
+  padding-bottom: 40px; }
+  /* line 548, ../scss/style-chloeB.scss */
+  .range-wrapper input[type='range'] {
+    margin-top: 20px;
+    -webkit-appearance: none !important;
+    background: #DDDDDD;
+    height: 1px;
+    outline: none !important; }
+  /* line 555, ../scss/style-chloeB.scss */
+  .range-wrapper input[type='range']::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+    margin: 40px 0;
+    -webkit-appearance: none;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../image/range-slider.svg); }
+  /* line 570, ../scss/style-chloeB.scss */
+  .range-wrapper .range-progress {
+    position: absolute;
+    height: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #305BFF;
+    width: 0%;
+    left: 0;
+    top: 37px; }
+  /* line 580, ../scss/style-chloeB.scss */
+  .range-wrapper output {
+    color: #fff;
+    background-image: url(../image/cursor.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    text-align: center;
+    width: 20px;
+    position: absolute;
+    z-index: -1;
+    bottom: -0px; }
+
+/* ------------------------------ */
+/* -------  PAGE FORMULE  -------- */
+/* ------------------------------ */
+/* -------  SLIDER  -------- */
+/* line 601, ../scss/style-chloeB.scss */
+.page-formule .header-slide {
+  height: 600px;
+  margin: 0;
+  padding: 50px;
+  padding-top: 150px;
+  background-image: url(../image/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*filter: linear-gradient($main-blue, $main-green);*/
+  color: #FFF;
+  font-family: IBMRegular; }
+
+/* line 618, ../scss/style-chloeB.scss */
+.header-slide h3 {
+  padding: 0;
+  margin: 0;
+  font-family: IBMMedium;
+  font-size: 3em;
+  margin-bottom: 15px; }
+
+/* line 626, ../scss/style-chloeB.scss */
+.header-slide p {
+  font-size: 0.8em;
+  margin-bottom: 15px; }
+
+/* line 631, ../scss/style-chloeB.scss */
+.header-slide .icone .fa {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 5px;
+  margin-bottom: 75px; }
+
+/* line 643, ../scss/style-chloeB.scss */
+.header-slide .btn {
+  font-size: 1.2em;
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 15px;
+  float: left; }
+
+/* line 652, ../scss/style-chloeB.scss */
+.header-slide .price-formule {
+  text-align: right;
+  font-size: 5em;
+  letter-spacing: -0.1em;
+  font-family: IBMRegular;
+  margin: 0;
+  padding: 0; }
+
+/* line 662, ../scss/style-chloeB.scss */
+.header-slide .price-formule sup {
+  position: relative;
+  vertical-align: middle;
+  letter-spacing: normal; }
+
+/* line 668, ../scss/style-chloeB.scss */
+.header-slide h2 {
+  text-align: right;
+  font-size: 3em;
+  letter-spacing: -0.1em;
+  font-family: IBMLight;
+  margin: 0;
+  padding: 0; }
+
+/* -- responsive --*/
+@media only screen and (max-device-width: 780px) {
+  /* line 679, ../scss/style-chloeB.scss */
+  .page-formule .header-slide {
+    padding-top: 80px; } }
+@media only screen and (max-device-width: 480px) {
+  /* line 687, ../scss/style-chloeB.scss */
+  .page-formule .header-slide {
+    padding-top: 50px; }
+
+  /* line 692, ../scss/style-chloeB.scss */
+  .header-slide {
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+    margin-bottom: 5px; }
+
+  /* line 699, ../scss/style-chloeB.scss */
+  .header-slide .icone .fa {
+    margin-bottom: 20px; }
+
+  /* line 703, ../scss/style-chloeB.scss */
+  .header-slide h2 {
+    margin-bottom: 40px;
+    text-align: right; }
+
+  /* line 708, ../scss/style-chloeB.scss */
+  .header-slide h1 {
+    text-align: right; } }
+/* -------------------------- */
+/* -------  RESUME  -------- */
+/* line 716, ../scss/style-chloeB.scss */
+.resume {
+  margin-top: -50px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #fff;
+  font-family: IBMRegular; }
+
+/* line 725, ../scss/style-chloeB.scss */
+.resume h2 {
+  font-family: IBMMedium;
+  margin-left: 0px; }
+
+/* line 730, ../scss/style-chloeB.scss */
+.resume h4 {
+  font-family: IBMItalic;
+  font-size: 1em;
+  margin-bottom: 30px; }
+
+/* line 736, ../scss/style-chloeB.scss */
+.resume p {
+  color: #888888;
+  font-size: 0.8em; }
+
+/* line 741, ../scss/style-chloeB.scss */
+.resume h3 {
+  color: #000000;
+  font-size: 1.2em;
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+/* line 748, ../scss/style-chloeB.scss */
+.resume i {
+  color: #305BFF; }
+
+/* line 752, ../scss/style-chloeB.scss */
+.resume .note i {
+  margin: 0;
+  color: #39ca74; }
+
+/* line 757, ../scss/style-chloeB.scss */
+.resume .note .fa-tripadvisor {
+  color: #888888; }
+
+/* line 761, ../scss/style-chloeB.scss */
+.colonne-resume {
+  padding-right: 50px;
+  height: 100%; }
+
+/* line 766, ../scss/style-chloeB.scss */
+.colonne-eval {
+  padding-left: 50px; }
+
+/* -- responsive --*/
+@media only screen and (max-device-width: 780px) {
+  /* line 773, ../scss/style-chloeB.scss */
+  .resume {
+    padding: 20px;
+    padding-top: 20px; }
+
+  /* line 779, ../scss/style-chloeB.scss */
+  .colonne-eval {
+    padding-left: 20px; } }
+@media only screen and (max-device-width: 480px) {
+  /* line 785, ../scss/style-chloeB.scss */
+  .colonne-resume {
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 20px;
+    border-right: 0px solid #888888;
+    border-bottom: 1px solid #888888; } }
+/* -------------------------- */
+/* -------  MA FORMULE  -------- */
+/* line 800, ../scss/style-chloeB.scss */
+.reservation {
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 35px;
+  padding-top: 30px;
+  background-color: #fff;
+  font-family: IBMRegular; }
+
+/* line 810, ../scss/style-chloeB.scss */
+.reservation h2 {
+  font-family: IBMMedium;
+  margin-left: 0px; }
+
+/* line 815, ../scss/style-chloeB.scss */
+.reservation p {
+  color: #888888;
+  font-size: 0.8em; }
+
+/* line 820, ../scss/style-chloeB.scss */
+.reservation .title-reservation {
+  color: #000000;
+  font-size: 1em;
+  margin-bottom: 10px;
+  font-family: IBMMEdium; }
+
+/* line 827, ../scss/style-chloeB.scss */
+.reservation h3 {
+  letter-spacing: -0.1em;
+  color: #305BFF;
+  font-size: 1.6em;
+  font-family: IBMLight;
+  margin: 0;
+  margin-bottom: 10px; }
+
+/* line 836, ../scss/style-chloeB.scss */
+.reservation h4 {
+  padding-top: 5px;
+  margin: 0;
+  font-size: 1.2em;
+  font-family: IBMLight;
+  color: #888888; }
+
+/* line 844, ../scss/style-chloeB.scss */
+.reservation .prix-duree {
+  padding-left: 0; }
+
+/* line 849, ../scss/style-chloeB.scss */
+.reserv-img {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(../image/img1.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; }
+
+/* line 863, ../scss/style-chloeB.scss */
+.reservation-info {
+  margin-top: 15px;
+  padding-right: 0;
+  height: 90px;
+  font-family: IBMRegular;
+  border-radius: 10px;
+  background-color: #F4F4F4; }
+
+/* line 872, ../scss/style-chloeB.scss */
+.reservation .btn {
+  margin-top: 15px;
+  font-size: 1.2em;
+  height: 90px;
+  border-radius: 10px;
+  margin-left: 20px; }
+
+/* -- responsive --*/
+@media only screen and (max-device-width: 780px) {
+  /* line 883, ../scss/style-chloeB.scss */
+  .reservation {
+    padding: 40px;
+    padding-top: 20px; }
+
+  /* line 889, ../scss/style-chloeB.scss */
+  .reservation .btn {
+    margin-left: 10px;
+    font-size: 1em; }
+
+  /* line 895, ../scss/style-chloeB.scss */
+  .reservation h4 {
+    font-size: 1em; }
+
+  /* line 899, ../scss/style-chloeB.scss */
+  .reservation h3 {
+    font-size: 1.1em; } }
+@media only screen and (max-device-width: 480px) {
+  /* line 905, ../scss/style-chloeB.scss */
+  .reservation-info {
+    height: 135px; }
+
+  /* line 909, ../scss/style-chloeB.scss */
+  .reservation .btn {
+    margin-left: 0; } }
+/* -------------------------- */
+/* ------- LE PLANNING  -------- */
+/* line 918, ../scss/style-chloeB.scss */
+.planning {
+  margin-top: 60px;
+  padding: 0; }
+
+/* line 924, ../scss/style-chloeB.scss */
+.planning .title-planning {
+  color: #000000;
+  font-family: IBMMEdium;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0; }
+
+/* line 932, ../scss/style-chloeB.scss */
+.planning .teaser {
+  color: #000000;
+  font-family: IBMMedium;
+  font-size: 0.8em;
+  margin-bottom: 40px; }
+
+/* line 939, ../scss/style-chloeB.scss */
+.planning div {
+  color: #305BFF;
+  border-left: 2px solid #305BFF;
+  padding-left: 43px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin: 0; }
+
+/* line 949, ../scss/style-chloeB.scss */
+.planning div h3 {
+  font-size: 1em;
+  font-family: IBMMedium;
+  padding: 0;
+  margin: 0;
+  margin-top: -15px; }
+
+/* line 958, ../scss/style-chloeB.scss */
+.planning div h3::before {
+  content: '\f111';
+  font-family: 'FontAwesome';
+  margin-right: 40px;
+  margin-left: -50px; }
+
+/* line 966, ../scss/style-chloeB.scss */
+.planning div h4 {
+  font-size: 0.8em;
+  font-family: IBMRegular;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px; }
+
+/* line 974, ../scss/style-chloeB.scss */
+.planning div p {
+  font-size: 0.8em;
+  font-family: IBMRegular;
+  color: #888888; }
+
+/* line 980, ../scss/style-chloeB.scss */
+.content-wrapper {
+  margin-top: 40px; }
+
+/* ----------------------------- */
+/* ---- PAGE ACCUEIL ------ */
+/* ------------------------------ */
+/* line 992, ../scss/style-chloeB.scss */
+.page-accueil #bg {
+  background-image: url(../image/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+/* line 999, ../scss/style-chloeB.scss */
+.page-accueil .header-form {
+  height: 600px;
+  padding: 50px;
+  padding-top: 150px;
+  /*filter: linear-gradient($main-blue, $main-green);*/
+  color: #FFF;
+  font-family: IBMRegular; }
+
+/* line 1010, ../scss/style-chloeB.scss */
+.page-accueil .swiper-form {
+  background-color: #FFF;
+  color: #000000;
+  padding: 0px 40px; }
+
+/* line 1017, ../scss/style-chloeB.scss */
+.page-accueil .swiper-form h2 {
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #888888; }
+/* line 1024, ../scss/style-chloeB.scss */
+.page-accueil .swiper-form p {
+  font-family: IBMRegular;
+  margin-bottom: 20px;
+  color: #888888; }
+/* line 1030, ../scss/style-chloeB.scss */
+.page-accueil .swiper-form label {
+  font-family: IBMRegular;
+  color: #888888;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+/* line 1038, ../scss/style-chloeB.scss */
+.page-accueil .swiper-form .btn-form {
+  border-radius: 500px;
+  padding: 30px;
+  margin-bottom: -30px;
+  position: relative;
+  width: 70px;
+  height: 70px; }
+  /* line 1046, ../scss/style-chloeB.scss */
+  .page-accueil .swiper-form .btn-form:hover {
+    background-color: white; }
+  /* line 1050, ../scss/style-chloeB.scss */
+  .page-accueil .swiper-form .btn-form i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 2.5em; }
+/* line 1059, ../scss/style-chloeB.scss */
+.page-accueil .swiper-form .swiper-pagination-bullet {
+  margin: 2px;
+  background-color: #888888;
+  border-radius: 0px;
+  width: 30%;
+  height: 2px;
+  max-width: 100px; }
+/* line 1068, ../scss/style-chloeB.scss */
+.page-accueil .swiper-form .swiper-pagination-bullet-active {
+  background-color: #39ca74; }
+
+/* line 1075, ../scss/style-chloeB.scss */
+.page-accueil .proposition {
+  margin-top: 50px; }
+
+/* line 1079, ../scss/style-chloeB.scss */
+.page-accueil hr {
+  margin-bottom: 10px;
+  padding: 0; }
+
+/* line 1084, ../scss/style-chloeB.scss */
+.page-accueil h2 {
+  font-family: IBMMedium;
+  margin: 0;
+  padding: 0; }
+
+/* line 1091, ../scss/style-chloeB.scss */
+.page-accueil p {
+  font-family: IBMRegular; }
+
+/* line 1095, ../scss/style-chloeB.scss */
+.page-accueil .btn-plus .btn {
+  margin-top: 30px;
+  font-size: 1em; }
+
+/* ----------------------------- */
+/* ---- PROPOSITION ------ */
+/* line 1105, ../scss/style-chloeB.scss */
+.page-accueil .formule-proposee {
+  padding: 0;
+  padding-bottom: 20px;
+  margin-top: 50px; }
+
+/* line 1111, ../scss/style-chloeB.scss */
+.formule-proposee .row {
+  margin: 0;
+  padding: 0; }
+
+/* line 1116, ../scss/style-chloeB.scss */
+.formule-proposee .image {
+  margin: 0;
+  background-image: url(../image/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+
+/* line 1126, ../scss/style-chloeB.scss */
+.formule-proposee .image h2 {
+  padding: 20px;
+  padding-top: 300px;
+  color: #FFF;
+  padding-bottom: 20px;
+  font-family: IBMMedium;
+  font-size: 1.2em;
+  text-align: center; }
+
+/* line 1137, ../scss/style-chloeB.scss */
+.formule-proposee .info {
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 5px; }
+
+/* line 1143, ../scss/style-chloeB.scss */
+.formule-proposee .info h2 {
+  letter-spacing: -0.1em;
+  color: #305BFF;
+  font-size: 1.5em;
+  font-family: IBMLight;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px; }
+
+/* line 1155, ../scss/style-chloeB.scss */
+.formule-proposee .info h4 {
+  padding: 0;
+  padding-top: 5px;
+  margin: 0;
+  font-size: 1.2em;
+  font-family: IBMLight;
+  color: #888888; }
+
+/* line 1167, ../scss/style-chloeB.scss */
+.formule-proposee .btn-vert, .formule-proposee .btn-blanc {
+  margin-top: 5px;
+  max-width: 200px;
+  float: none !important; }
+
+/* ----------------------------- */
+/* ---- QU'EST CE QU'ALTI'UDE ------ */
+/* line 1181, ../scss/style-chloeB.scss */
+.explain .title-explain {
+  height: 350px;
+  background-color: #305BFF;
+  color: #FFF;
+  padding-top: 30px;
+  margin-top: 0px;
+  font-family: IBMRegular;
+  margin-bottom: -175px; }
+
+/* ---- box-explain ------ */
+/* line 1193, ../scss/style-chloeB.scss */
+.search-research {
+  margin-bottom: 80px; }
+
+/* line 1197, ../scss/style-chloeB.scss */
+.box-explain {
+  background-color: #FFF;
+  padding: 0;
+  font-family: IBMRegular;
+  color: #888888;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden; }
+
+/* line 1207, ../scss/style-chloeB.scss */
+.box-explain .image {
+  height: 100%;
+  margin: 0;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  padding: 0 !important; }
+
+/* line 1220, ../scss/style-chloeB.scss */
+.box-explain .text-wrapper {
+  padding: 50px; }
+
+/* line 1223, ../scss/style-chloeB.scss */
+.box-explain p {
+  text-align: center; }
+
+/* line 1227, ../scss/style-chloeB.scss */
+.box-explain p i {
+  padding: 20px;
+  border: 2px solid #39ca74;
+  border-radius: 100px;
+  color: #39ca74; }
+
+/* line 1234, ../scss/style-chloeB.scss */
+.box-explain h4 {
+  font-family: IBMMedium;
+  text-align: center;
+  padding: 20px; }
+
+@media screen and (min-width: 992px) {
+  /* line 1243, ../scss/style-chloeB.scss */
+  .hide-md-bef {
+    display: none !important; }
+
+  /* line 1247, ../scss/style-chloeB.scss */
+  .filter-wrapper {
+    padding-left: 0; } }
+@media screen and (max-width: 991px) {
+  /* line 1256, ../scss/style-chloeB.scss */
+  .navbar .brand {
+    padding-left: 0;
+    padding-right: 0; }
+  /* line 1261, ../scss/style-chloeB.scss */
+  .navbar #menu-trig {
+    padding-left: 15px;
+    padding-right: 15px; }
+    /* line 1265, ../scss/style-chloeB.scss */
+    .navbar #menu-trig.icon-menu + .menu-wrapper {
+      max-height: 0px; }
+    /* line 1269, ../scss/style-chloeB.scss */
+    .navbar #menu-trig.icon-close + .menu-wrapper {
+      max-height: 100vh; }
+  /* line 1274, ../scss/style-chloeB.scss */
+  .navbar .menu-wrapper {
+    overflow: hidden;
+    -moz-transition: max-height 0.3s;
+    -o-transition: max-height 0.3s;
+    -webkit-transition: max-height 0.3s;
+    transition: max-height 0.3s; }
+    /* line 1279, ../scss/style-chloeB.scss */
+    .navbar .menu-wrapper li {
+      display: block;
+      border-left: none;
+      padding: 0 15px; }
+      /* line 1284, ../scss/style-chloeB.scss */
+      .navbar .menu-wrapper li a {
+        padding: 10px 0;
+        text-align: left; }
+        /* line 1288, ../scss/style-chloeB.scss */
+        .navbar .menu-wrapper li a span {
+          display: inline-block;
+          margin-right: 10px;
+          vertical-align: middle;
+          font-size: 1.35em;
+          margin-bottom: 0; }
+
+  /* line 1300, ../scss/style-chloeB.scss */
+  .box-explain .image {
+    position: static;
+    height: 250px;
+    margin: 0px; }
+
+  /* line 1306, ../scss/style-chloeB.scss */
+  .formulaire .photo {
+    height: 250px;
+    position: static; }
+
+  /* line 1311, ../scss/style-chloeB.scss */
+  .formulaire {
+    height: auto; }
+
+  /* line 1315, ../scss/style-chloeB.scss */
+  .box-resultat {
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 20px; }
+
+  /* line 1322, ../scss/style-chloeB.scss */
+  .bandeau-haut {
+    margin-top: 50px; }
+
+  /* line 1326, ../scss/style-chloeB.scss */
+  .info h2 {
+    margin-top: 10px;
+    text-align: left; }
+
+  /* line 1331, ../scss/style-chloeB.scss */
+  .info h4 {
+    margin-top: 15px; }
+
+  /* line 1335, ../scss/style-chloeB.scss */
+  .summury {
+    text-align: left !important;
+    height: auto !important;
+    overflow: visible !important; }
+
+  /* line 1341, ../scss/style-chloeB.scss */
+  .filtre {
+    border-radius: 15px !important;
+    overflow: hidden; }
+
+  /* line 1346, ../scss/style-chloeB.scss */
+  .filtre .title-menu {
+    padding-left: 15px; }
+
+  /* line 1350, ../scss/style-chloeB.scss */
+  .filtre form {
+    padding-left: 15px; }
+
+  /* line 1354, ../scss/style-chloeB.scss */
+  .filtre .search-wrapper {
+    margin-top: 30px; }
+
+  /* line 1359, ../scss/style-chloeB.scss */
+  .page-formule .header-slide {
+    padding: 20px 35px;
+    font-size: 14px;
+    padding-bottom: 100px;
+    height: auto; }
+  /* line 1366, ../scss/style-chloeB.scss */
+  .page-formule .icone i {
+    margin-bottom: 20px !important; }
+
+  /* line 1369, ../scss/style-chloeB.scss */
+  .reservation {
+    padding-left: 15px !important;
+    padding-right: 15px !important; }
+    /* line 1373, ../scss/style-chloeB.scss */
+    .reservation .btn {
+      margin-left: 0 !important;
+      height: auto;
+      white-space: normal; }
+
+  /* line 1380, ../scss/style-chloeB.scss */
+  .to-hide {
+    overflow: hidden;
+    max-height: 0;
+    -moz-transition: max-height 0.5s;
+    -o-transition: max-height 0.5s;
+    -webkit-transition: max-height 0.5s;
+    transition: max-height 0.5s; }
+
+  /* line 1386, ../scss/style-chloeB.scss */
+  .is-open {
+    max-height: 100vh; } }
+@media screen and (min-width: 769px) {
+  /* line 1394, ../scss/style-chloeB.scss */
+  .hide-desktop {
+    display: none !important; }
+
+  /* line 1398, ../scss/style-chloeB.scss */
+  .text-left .btn-blanc {
+    width: auto;
+    margin-left: -15px; }
+
+  /* line 1403, ../scss/style-chloeB.scss */
+  .box-resultat {
+    padding-bottom: 0px; } }
+@media screen and (max-width: 768px) {
+  /* line 1410, ../scss/style-chloeB.scss */
+  .header-slide {
+    font-size: 12px; }
+    /* line 1413, ../scss/style-chloeB.scss */
+    .header-slide h2 {
+      font-size: 2em; }
+      /* line 1415, ../scss/style-chloeB.scss */
+      .header-slide h2.price-formule {
+        font-size: 2.5em; } }

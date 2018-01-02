@@ -1,0 +1,180 @@
+@import "compass";
+
+$active-color : #20a8d8;
+
+.card-title{
+    color: #888;
+    font-weight: 200;
+}
+    
+.loggout-btn{
+    display: inline-block !important;
+    background: #fff !important;
+    border: solid 1px #aaa !important;
+    @include border-radius(50px !important);
+    margin: 0 20px !important;
+    padding: 5px 20px !important;
+}
+
+.card-header{
+    .custom-btn{
+//        margin-top: 2px;
+    }
+}
+
+.custom-btn{
+    @include border-radius(50px !important);
+    padding: 5px 20px !important;
+    display: inline-block;
+    text-decoration: none !important; 
+    @include transition(background 0.5s, border 0.5s, color 0.3s);
+}
+
+.secondary-outline-btn{
+    background-color: transparent;
+    border: solid 1px #aaa;
+    color: #aaa;
+    
+    &:hover{
+        color: white;
+        background-color: $active-color;
+        border-color: transparent;
+    }
+}
+
+.primary-outline-btn{
+    background-color: $active-color;
+    color: #fff;
+    border: none;
+    
+    &:hover{
+        background-color: darken($active-color, 5%);
+    }
+}
+
+label.form-group{
+    width: 100%;
+    
+    .big{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.25em;
+        color: #aaa;
+    }
+}
+
+.cat-list label{
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+#droparea{
+    
+    border: dashed 5px #aaa;
+    @include transition(border 0.5s);
+    
+    &.is-hovered{
+        border-color: $active-color;
+        h2{
+            color: $active-color;
+        }
+    }
+    
+    h2{
+        color: #aaa;
+        @include transition(color 0.5s);
+    }
+    
+    .browse-wrapper{
+        text-align: center;
+        width: 100%;
+        padding: 100px 40px;
+        
+    }
+}
+
+#filelist{
+    
+    padding: 0;
+    
+    .file{
+        margin: 20px 0;
+        border: solid 1px rgba(0,0,0,0.3);
+        @include box-shadow(0px 0px 10px rgba(0,0,0,0.3));
+        background-color: #fff;
+        padding: 20px;
+        overflow: hidden;
+        list-style: none;
+        
+        img{
+            display: inline-block;
+            height: 100px;
+            width: 100%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        
+        .progressbar{
+            height: 5px;
+            width: 100px;
+            position: relative;
+            @include border-radius(5px);
+            background-color: #ddd;
+            overflow: hidden;
+            
+            .progress{
+                @include transition(width 0.5s);
+                background-color: $active-color;
+                position: absolute;
+                left: 0;
+                top:0;
+                right: 0;
+                height: 5px;
+                width: 0px;
+                
+            }
+        }
+    }
+}
+
+.img-list{
+    .hidden-check{display: none;}
+    
+    div{
+        
+        padding: 15px;
+        position: relative;
+        height: 200px;
+        
+        label{
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            padding: 10px;
+            background-color: white;
+            height: 180px;
+            @include box-shadow(0px 0px 5px 0px rgba(0,0,0,0.3));
+            @include transition(box-shadow 0.5s);
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    
+    .hidden-check:checked + label{
+        @include box-shadow(0px 0px 15px 5px rgba(32,168,216,0.5));
+    }
+}
+
+.cat-list-wrapper{
+    max-height: 300px;
+    overflow-y: scroll;
+}

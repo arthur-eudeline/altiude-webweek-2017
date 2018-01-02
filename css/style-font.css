@@ -1,0 +1,46 @@
+/* --- Font IBM --- */
+
+@font-face {
+font-family: 'IBMSemiBold';
+src: url('../font/IBMPlexSans-SemiBold.otf');
+}
+
+@font-face {
+font-family: 'IBMRegular';
+src: url('../font/IBMPlexSans-Regular.otf');
+}
+
+@font-face {
+font-family: 'IBMMedium';
+src: url('../font/IBMPlexSans-Medium.otf');
+}
+
+@font-face {
+font-family: 'IBMThin';
+src: url('../font/IBMPlexSans-Thin.otf');
+}
+
+@font-face {
+font-family: 'IBMText';
+src: url('../font/IBMPlexSans-Text.otf');
+}
+
+@font-face {
+font-family: 'IBMBold';
+src: url('../font/IBMPlexSans-Bold.otf');
+}
+
+@font-face {
+font-family: 'IBMLight';
+src: url('../font/IBMPlexSans-Light.otf');
+}
+
+@font-face {
+font-family: 'IBMExtraLight';
+src: url('../font/IBMPlexSans-ExtraLight.otf');
+}
+
+@font-face {
+font-family: 'IBMItalic';
+src: url('../font/IBMPlexSans-Italic.otf');
+}

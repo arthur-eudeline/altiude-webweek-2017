@@ -1,0 +1,62 @@
+.planning {
+    margin-top : 60px;
+    padding: 0;
+
+}
+
+.planning .title-planning {
+    color:#000000;
+    font-family: IBMMEdium, sans-serif;
+    font-size: 1.5em;
+    margin: 0;
+    padding:0;
+}
+
+.planning .teaser {
+    color:#000000;
+    font-family: IBMMedium, sans-serif;
+    font-size: 0.8em;
+    margin-bottom: 40px;
+}
+
+.planning div {
+    color:#305BFF;
+    border-left: 2px solid #305BFF;
+    padding:0;
+    padding-left:43px;
+    padding-top:10px;
+    padding-bottom: 20px;
+    margin:0;
+    
+}
+
+.planning div h3 {
+    font-size: 1em;
+    font-family: IBMMedium, sans-serif;
+    padding:0;
+    margin:0;
+    margin-top:-15px;
+
+}
+
+.planning div h3::before {
+    content: '\f111';
+    font-family: 'FontAwesome';
+    margin-right: 40px;
+    margin-left: -50px;
+    
+}
+
+.planning div h4 {
+    font-size: 0.8em;
+    font-family: IBMRegular, sans-serif;
+    padding:0;
+    margin:0;
+    margin-bottom:10px;
+}
+
+.planning div p {
+    font-size: 0.8em;
+    font-family: IBMRegular, sans-serif;
+    color:#DCDCDC;
+}
