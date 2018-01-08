@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Mirrored from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/cat/edit-cat.php?state=edit&cat-id=11 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Dec 2017 12:03:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Éditer une catégorie</title>
+
+    <!-- Icons -->
+    <link href="../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Main styles for this application -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- Styles required by this views -->
+    <link href="../../css/admin.css" rel="stylesheet">
+    
+    <script src="../../js/jquery.min.js"></script>
+    
+    
+</head> 
+  
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+        <!--HEADER-->
+        <header class="app-header navbar ">
+            <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item d-md-down-none">
+                    Bonjour, John Doe                </li>
+                <li class="nav-item d-md-down-none">
+                    <a class="nav-link loggout-btn" href="#"><i class="icon-logout"></i> Se déconnecter </a>
+                </li>
+            </ul>
+        </header>
+        <!--/HEADER-->
+   
+    
+<!--BODY-->
+<div class="app-body">
+
+    <div class="sidebar">
+        <!--MENU SIDEBAR-->
+         
+<nav class="sidebar-nav">
+    <ul class="nav">
+                <li class="nav-item">
+            <a class="nav-link " href="../index-2.html"><i class="icon-speedometer"></i> Accueil</a>
+        </li>
+                <li class="nav-title">
+            Contenu        </li>
+                <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle " href="#"><i class="icon-doc"></i> Pages</a>
+            
+            <ul class="nav-dropdown-items">
+                                <li class="nav-item">
+                    <a class="nav-link " href="../pages/edit-page6fdc.html?state=new"><i class="icon-plus"></i> Créer une page</a>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link " href="../pages/list-page.html"><i class="icon-eye"></i> Voir les pages</a>
+                </li>
+                            </ul>
+        </li>
+                <li class="nav-item">
+            <a class="nav-link " href="../pages/image-uploader-page.html"><i class="icon-picture"></i> Ajouter/Supprimer des images</a>
+        </li>
+                <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle " href="#"><i class="icon-drawer"></i> Catégories</a>
+            
+            <ul class="nav-dropdown-items">
+                                <li class="nav-item">
+                    <a class="nav-link " href="edit-cat6fdc.html?state=new"><i class="icon-plus"></i> Créer une catégorie</a>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link " href="list-cat.html"><i class="icon-eye"></i> Voir les catégories</a>
+                </li>
+                            </ul>
+        </li>
+            </ul>
+</nav>   
+<button class="sidebar-minimizer brand-minimizer" type="button"></button>    
+    
+        <!--MENU SIDEBAR-->
+    </div>
+
+    <!-- Main content -->
+    <main class="main">
+
+        <!--MAIN CONTENTE AREA-->
+        <div class="container-fluid">
+            <div class="animated fadeIn">
+
+                <div class="card mt-5">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="card-title">Éditer une catégorie </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                                                    <form method="post" class="row mb-5 mt-2" action="http://web-week-2017-diablo.tp.mmi-lepuy.fr/admin/cat/edit-cat-script.php" enctype="multipart/form-data">
+                                
+                                <div class="col-12">
+                                    <label class="form-group">
+                                        <span class="big">Titre de la catégorie :</span>
+                                        <input type="text" placeholder="Titre de la page..." name="cat_title" required maxlength="255" class="form-control" value="Gastronomie">
+                                    </label> 
+                                </div> 
+
+                                <div class="col-12 col-md-6 mt-2 mb-3">
+                                    <label class="form-group">
+                                        Description de la catégorie
+                                        <textarea name="cat_desc" class="form-control" placeholder="Une brève description de la catégorie qui donnera plus d'information aux visiteurs lors de leur visite..."></textarea>
+                                    </label>
+                                </div> 
+
+                                <label class="col-12 col-md-6 mt-2 mb-3">
+
+                                    Icône :
+                                    <div class="input-group">
+                                        <input type="text" name="cat_icon" value="fa-glass" placeholder="Icône de la catégorie..." class="form-control">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-file-image-o"></i> 
+                                        </span>
+                                    </div>
+                                    <em>coller seulement la classe fa (ex : fa-eye), <a href="http://fontawesome.io/icons/" target="_blank">voir les icônes</a></em>
+                                </label>
+                                
+                                <label class="col-12 mt-2 mb-3">
+
+                                    Type de catégorie :
+                                    <select class="form-control" name="cat_type">
+                                        <option selected disabled>Type de la catégorie</option>
+                                        
+                                        <option value="activite" selected><b>Type d'activités</b> (ex : Sport, Gastronomie, ...)</option>
+                                        <option value="groupe" >Pour un certain <b>type de groupe</b> (ex: Famille, Couple, ...)</option>
+                                        <option value="theme" >Type de thème (ex : Médiéval, Mythes et Légendes, ... )</option>
+                                        <option value="environnement" >Type d'environnement (ex : Nature, Ville, ... )</option>
+                                    </select>
+                                </label>
+
+
+                                <div class="col-12 mt-5 text-center">
+                                                                        <input type="hidden" name="cat_ID" value="11">
+                                                                        <button type="submit" class="primary-outline-btn custom-btn">Mettre à jour</button>
+                                </div>
+
+
+
+                
+                        </form>
+                            </div>
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- /.conainer-fluid -->
+
+            </main>
+
+        </div>
+
+    
+        <footer class="app-footer">
+            <span><a href="http://coreui.io/">CoreUI</a> © 2017 creativeLabs.</span>
+            <span class="ml-auto">Powered by <a href="http://coreui.io/">CoreUI</a></span>
+        </footer>
+
+        <!-- Bootstrap and necessary plugins -->
+        <script src="../../js/popper.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/pace.min.js"></script>
+
+        <!-- CoreUI main scripts -->
+
+        <script src="../js/app.js"></script>
+
+        <!-- Plugins and scripts required by this views -->
+
+
+    </body>
+
+<!-- Mirrored from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/cat/edit-cat.php?state=edit&cat-id=11 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Dec 2017 12:03:56 GMT -->
+</html>
+

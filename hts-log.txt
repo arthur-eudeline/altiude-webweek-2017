@@ -1,0 +1,60 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 29 Dec 2017 12:12:38 at http://web-week-2017-diablo.tp.mmi-lepuy.fr +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar -*facebook* -*tripadvisor* -*coreui.io*
+(winhttrack -qYC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "fr, en, *" -Y http://web-week-2017-diablo.tp.mmi-lepuy.fr -O1 "D:\Utilisateurs\Bureau\test_1\WeebWeek" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar -*facebook* -*tripadvisor* -*coreui.io* )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:52:46	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/css/fonts/glyphicons-halflings-regular.eot (from web-week-2017-diablo.tp.mmi-lepuy.fr/css/bootstrap/bootstrap.min.css)
+12:52:46	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/css/fonts/glyphicons-halflings-regular.eot? (from web-week-2017-diablo.tp.mmi-lepuy.fr/css/bootstrap/bootstrap.min.css)
+12:52:46	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/css/fonts/glyphicons-halflings-regular.woff2 (from web-week-2017-diablo.tp.mmi-lepuy.fr/css/bootstrap/bootstrap.min.css)
+12:52:46	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/css/fonts/glyphicons-halflings-regular.woff (from web-week-2017-diablo.tp.mmi-lepuy.fr/css/bootstrap/bootstrap.min.css)
+12:52:46	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/css/fonts/glyphicons-halflings-regular.ttf (from web-week-2017-diablo.tp.mmi-lepuy.fr/css/bootstrap/bootstrap.min.css)
+12:52:46	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/css/fonts/glyphicons-halflings-regular.svg (from web-week-2017-diablo.tp.mmi-lepuy.fr/css/bootstrap/bootstrap.min.css)
+12:52:46	Warning: 	File not parsed, looks like binary: web-week-2017-diablo.tp.mmi-lepuy.fr/css/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0
+12:52:46	Warning: 	File not parsed, looks like binary: web-week-2017-diablo.tp.mmi-lepuy.fr/fonts/Simple-Line-Icons.woff2?v=2.4.0
+12:58:58	Warning: 	File not parsed, looks like binary: web-week-2017-diablo.tp.mmi-lepuy.fr/fonts/fontawesome-webfont.woff2?v=4.7.0
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/CatheFaceClassique.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/CatheFaceIncline.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/CatheTroisQuart.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/CloitreBatimentTour.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/CloitreEntree.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/CloitreEntreeSouterrain.png (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/Ellipse 3.png (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/GifCamino.gif (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/GifCamino.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/GifFontaine.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/GifFumee.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/LacBleuCheminEnviront.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/LacBleuEnvirontNeige.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/LacBleuLac.png (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/LacBleuNature.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/Mezenc photo internet.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/PierreGauloise.png (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/RM photo internet.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/RiviereMoulinVert.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/RiviereTherme.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/RocherAiguhilleFace.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/RocherAiguhilleProfile.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/SKIDEFOND photo internet.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/SanctuaireFace.png (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/Sante-burgomcollaslug.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/ViergeFace.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/ViergePlace.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/Vinyl-Record-and-Cover-Presentation-Mock-up-lg.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/cuisine photo internet.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/lac-bleu photo internet.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/logo.png (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/photo internet estables.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/photo internet.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/photo internet2.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/riva message 1.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/spa photo internet.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/village photo internet.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/village.jpg (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php)
+13:03:56	Error: 	"Not Found" (404) at link web-week-2017-diablo.tp.mmi-lepuy.fr/admin/cat/edit-page.php?state=new (from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/cat/list-cat.php)
+
+HTTrack Website Copier/3.49-2 mirror complete in 51 minutes 18 seconds : 178 links scanned, 131 files written (79010969 bytes overall) [77224705 bytes received at 25089 bytes/sec], 2392237 bytes transferred using HTTP compression in 56 files, ratio 22%, 2.4 requests per connection
+(46 errors, 3 warnings, 0 messages)

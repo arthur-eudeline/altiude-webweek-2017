@@ -1,0 +1,672 @@
+
+<!DOCTYPE html> 
+<html lang="fr">
+
+    
+<!-- Mirrored from web-week-2017-diablo.tp.mmi-lepuy.fr/search.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Dec 2017 11:33:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cercher une formule</title>
+
+        <!--INCLUDES STYLESHEETS-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css" /> 
+        <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.css"/>        
+        <link rel="stylesheet" type="text/css" href="css/swiper/swiper.css" />
+        <link rel="stylesheet" type="text/css" href="css/swiper/swiper.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/simple-line-icons.css"/>
+
+        <!--CUSTOM STYLESHEETS-->
+        <link rel="stylesheet" type="text/css" href="css/style-chloeB.css" />
+        <link rel="stylesheet" type="text/css" href="css/style-font.css" />
+
+        <!--INCLUDES SCRIPTS-->
+        <script src="../code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/swiper/swiper.js"></script>
+
+    </head>
+
+    <body class="page-recherche">
+
+        <div class="container-fluid">
+            <div class="row navbar">
+                <div class="col-xs-6 col-md-4 brand">
+                    <a href="index-2.html"><i class=""></i></a>
+                </div>
+
+                <i class="icon-menu hide-md-bef col-xs-6 text-right" id="menu-trig"></i>
+
+                <ul class="col-xs-12 col-md-8 menu-wrapper">
+                                        <li>
+                        <a href="index-2.html" class="text-uppercase"><span><i class="icon-home" aria-hidden="true"></i></span>Accueil</a>
+                    </li>
+                                        <li>
+                        <a href="search.html" class="text-uppercase"><span><i class="icon-compass" aria-hidden="true"></i></span>Toutes nos formules</a>
+                    </li>
+                                        <li>
+                        <a href="contact.html" class="text-uppercase"><span><i class="icon-envelope" aria-hidden="true"></i></span>Contact</a>
+                    </li>
+                                        <li>
+                        <a href="admin/index.html" class="text-uppercase"><span><i class="icon-user" aria-hidden="true"></i></span>Admin</a>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+
+        
+<!-- CORPS -->
+<div class="container-fluid">
+    <div class="row">
+
+        <!--FILTRE-->
+        <div class="col-md-2 col-xs-12 filter-wrapper">
+            <div class="box-shadow filtre row">
+                <div class="">
+                    <div class=" col-xs-12 title-menu">
+                        <h4 id="to-hide-trig">
+                            FILTRE <i class="fa fa-angle-down hide-desktop" aria-hidden="true"></i>
+                        </h4>
+                    </div>
+
+                    <form class="col-xs-12 to-hide" method="get" action="http://web-week-2017-diablo.tp.mmi-lepuy.fr/search.php?action=search">
+                        <input type="hidden" name="action" value="search">
+
+                        <!-- BARRE DE RECHERCHE -->
+                        <div class="input-group search-wrapper">
+
+                            <input type="text" class="form-control" placeholder="Rechercher une offre..." name="keyword" value="">
+                            <span class="input-group-btn">
+                                <button class="btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
+                        <!-- BARRE DE RECHERCHE -->
+
+                        <!-- DUREE DU SEJOUR -->
+                        <div class="range-wrapper">
+                            <p class="categorie-title">DURÉE (EN J)</p>
+                            <div class="range-progress"></div>
+                                                        <input type="range" class="range" id="range" name="duree" min="1" max="7" step="1" value="2"/>
+                                                        <output style="left:17%; transform:translateX(-37%);" id="range-value"></output>
+                        </div>
+                        <!-- DUREE DU SEJOUR -->
+
+                        <p class="categorie-title">activite</p>                        <input type="checkbox" name="type[]" value="10" id="cat-10" class="custom-check">
+                                                <label for="cat-10" class="custom-check">
+                            Sport                            <i class="fa fa-heartbeat"></i>   
+                        </label>
+
+                                                <input type="checkbox" name="type[]" value="11" id="cat-11" class="custom-check">
+                                                <label for="cat-11" class="custom-check">
+                            Gastronomie                            <i class="fa fa-glass"></i>   
+                        </label>
+
+                        <p class="categorie-title">environnement</p>                        <input type="checkbox" name="type[]" value="12" id="cat-12" class="custom-check">
+                                                <label for="cat-12" class="custom-check">
+                            Ville                             <i class="fa fa-university"></i>   
+                        </label>
+
+                                                <input type="checkbox" name="type[]" value="13" id="cat-13" class="custom-check">
+                                                <label for="cat-13" class="custom-check">
+                            Nature                            <i class="fa fa-tree"></i>   
+                        </label>
+
+                        <p class="categorie-title">groupe</p>                        <input type="checkbox" name="type[]" value="8" id="cat-8" class="custom-check">
+                                                <label for="cat-8" class="custom-check">
+                            En couple                            <i class="fa fa-heart"></i>   
+                        </label>
+
+                                                <input type="checkbox" name="type[]" value="9" id="cat-9" class="custom-check">
+                                                <label for="cat-9" class="custom-check">
+                            En famille                            <i class="fa fa-user"></i>   
+                        </label>
+
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-vert">Filtrer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--/FILTRE-->
+
+        <!--RESULTATS DE RECHERCHE-->
+        <div class="col-md-offset-1 col-md-8 col-xs-12"> <!-- Contenu à droite -->
+            <div class="row bandeau-haut"> <!-- Titre plus recherche -->
+                <div class="col-sm-7">
+                    <h3>NOS FORMULES POUR VOTRE SÉJOUR</h3>
+                    <p>Faites vous plaisir !</p>
+                </div>
+            </div> <!-- /fin/ Titre plus recherche -->
+
+
+            <!--LISTE DES FORMULES-->
+                        <div class="row" id="form-11">
+                <div class="col-xs-12">
+                    <div class="box-shadow box-resultat">
+                        <!--IMAGE-->
+                        <div class="col-md-8 col-xs-12 col-md-push-4 image">
+                            <img src="uploads/GifCamino.gif"> <!-- Image de la formule -->
+                            <h3>LE PUY-EN-VELAY, SITE EXCEPTIONNEL </h3>
+                                                        <div class="col-xs-12 icon">
+                                <p>
+                                                                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-glass fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-university fa-2x" aria-hidden="true"></i>
+                                                                    </p>
+                            </div>
+                                                    </div>
+                        <!--/IMAGE-->
+
+                        <!--INFOS-->
+                        <div class="col-md-4 col-xs-12 col-md-pull-8 info"> <!-- Info sur la formule -->
+                            <div class="row">
+                                <h2 class="col-xs-6 col-md-12">99€<sup>/pers</sup></h2>
+                                <h4 class="col-xs-6 col-md-12">2 JOUR(S)</h4>
+                            </div>
+                            <p class="summury">Le site exceptionnel du Puy-en-Velay et sa cathédrale classée au Patrimoine Mondial de l’humanité par l’UNESCO, enchâssés dans un cadre verdoyant de montagnes volcaniques où l’eau et le feu ont sculpté des décors naturels et où l’homme a fait triompher la beauté de l’art.
+Cette œuvre monumentale en fonte de fer est située dans la ville du Puy-en-Velay. Construite entre 1856 et 1860, à partir de canons sur les plans de Jean-Marie Bonnassieux. La statue se situe à 757 mètres d'altitude, au sommet du « rocher Corneille » La statue représente la Vierge Marie couronnée d'étoiles, se tenant debout sur un demi globe terrestre où elle écrase du pied un serpent, et tenant sur son bras droit l'Enfant Jésus qui bénit la ville et la France . Elle mesure plus de 16 mètres et sa masse totale est estimée à 835 tonnes. Un escalier de pierre composé de 33 marches est aménagé dans le piédestal et permet d'accéder à l'intérieur de la statue qui est creux  .
+Quant à elle, la cathédrale Notre-Dame de l'Annonciation est un monument majeur de l'art roman et de l'Occident chrétien.  Une Vierge noire, objet de nombreux pèlerinages au cours des siècles,aurait été offerte par Saint Louis à son retour de la croisade d’Égypte . Elle fut brûlée lors de la révolution mais as été remplacée.La cathédrale a été élue 2e monument préféré des français en 2015 . Un dolmen occupe depuis des millénaires l'actuelle emplacement de la cathédrale. appelé pierre des apparitions C'est sur ce dolmen que serait apparue au iiie siècle la Vierge à une matrone du Puy . D'autres apparitions ont étaient recensées depuis. Cette pierre marqué a l'origine le temps qui ce dressé la auparavent: Un temples pour le dieu gaulois cernunnos. L'emplacement referme dés lors nombres de mystère.</p>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                                    <a herf="https://www.tripadvisor.fr/Hotel_Review-g187092-d5317210-Reviews-L_Epicurium-Le_Puy_en_Velay_Haute_Loire_Auvergne_Rhone_Alpes.html" class=" btn btn-vert">réserver</a> 
+                                </div>
+
+                                <div class="col-sm-6 col-sm-offset-0  col-xs-8 col-xs-offset-2 text-left">
+                                    <a href="formulec4b0.html?page-id=11" class="btn btn-blanc"><i class="fa fa-eye" aria-hidden="true"></i> <span class="hide-desktop">en voir plus</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/INFOS-->
+                    </div>
+                </div>
+            </div>
+                        <div class="row" id="form-12">
+                <div class="col-xs-12">
+                    <div class="box-shadow box-resultat">
+                        <!--IMAGE-->
+                        <div class="col-md-8 col-xs-12 col-md-push-4 image">
+                            <img src="uploads/RiviereMoulinVert.jpg"> <!-- Image de la formule -->
+                            <h3>LES THERMES</h3>
+                                                        <div class="col-xs-12 icon">
+                                <p>
+                                                                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-heartbeat fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-glass fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-university fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-tree fa-2x" aria-hidden="true"></i>
+                                                                    </p>
+                            </div>
+                                                    </div>
+                        <!--/IMAGE-->
+
+                        <!--INFOS-->
+                        <div class="col-md-4 col-xs-12 col-md-pull-8 info"> <!-- Info sur la formule -->
+                            <div class="row">
+                                <h2 class="col-xs-6 col-md-12">240€<sup>/pers</sup></h2>
+                                <h4 class="col-xs-6 col-md-12">3 JOUR(S)</h4>
+                            </div>
+                            <p class="summury">Dans la commune de Félines se trouve un petit village particulier en Haute-Loire: La Souchère. Ce petit hameau abrité jusqu’à la fin de la seconde guerre mondiale une source thermal unique dans le département. Les eaux de la Souchére, reconnue eau minérale, appartenait à la famille Ligonie. L'établissement autrefois imposant est désormais réduit à quelques ruines et décombres mais témoigne d'un passé glorieux via les nombreuses cartes postales que les locaux possèdent toujours. Cette source date de 1772 et a été recensé sur l'ordre du roi louis XV. Ce bâtiment, ces vestiges et les documents relatifs à cette époque nous depeins une époque que personne n'a connue, l'époque d'une Auvergne très touristique et reconnue pour tout ces bienfaits naturels autant dans nos poumons que dans nos assiettes et nos verres.</p>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                                    <a herf="https://www.tripadvisor.fr/Hotel_Review-g187092-d5317210-Reviews-L_Epicurium-Le_Puy_en_Velay_Haute_Loire_Auvergne_Rhone_Alpes.html" class=" btn btn-vert">réserver</a> 
+                                </div>
+
+                                <div class="col-sm-6 col-sm-offset-0  col-xs-8 col-xs-offset-2 text-left">
+                                    <a href="formulec4d5.html?page-id=12" class="btn btn-blanc"><i class="fa fa-eye" aria-hidden="true"></i> <span class="hide-desktop">en voir plus</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/INFOS-->
+                    </div>
+                </div>
+            </div>
+                        <div class="row" id="form-13">
+                <div class="col-xs-12">
+                    <div class="box-shadow box-resultat">
+                        <!--IMAGE-->
+                        <div class="col-md-8 col-xs-12 col-md-push-4 image">
+                            <img src="uploads/RiviereMoulinVert.jpg"> <!-- Image de la formule -->
+                            <h3>LE TOUR DE LA HAUTE-LOIRE</h3>
+                                                        <div class="col-xs-12 icon">
+                                <p>
+                                                                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-heartbeat fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-glass fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-university fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-tree fa-2x" aria-hidden="true"></i>
+                                                                    </p>
+                            </div>
+                                                    </div>
+                        <!--/IMAGE-->
+
+                        <!--INFOS-->
+                        <div class="col-md-4 col-xs-12 col-md-pull-8 info"> <!-- Info sur la formule -->
+                            <div class="row">
+                                <h2 class="col-xs-6 col-md-12">433€<sup>/pers</sup></h2>
+                                <h4 class="col-xs-6 col-md-12">7 JOUR(S)</h4>
+                            </div>
+                            <p class="summury">Lac dont le lit est couvert de lauze Donnant un reflet bleu naturel. Non loin du Puy en Velay dans la commune de Champclause ce lac est entouré de nature le tout protégé par la loi. Que ce soit par le contraste et la verdure en été ou le froid et la glace en hiver faisant ressortir le coté minéral ce lac est un des plus beau endroit naturel de la Haute-Loire. Ce lac est le résultat de centaine d'année de pluie et de ruissellement dans une très ancienne cavité servant à extraire une fameuse pierre : la lauze.</p>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                                    <a herf="https://www.tripadvisor.fr/Hotel_Review-g950950-d1013227-Reviews-Le_Fort_du_Pre-Saint_Bonnet_le_Froid_Haute_Loire_Auvergne_Rhone_Alpes.html" class=" btn btn-vert">réserver</a> 
+                                </div>
+
+                                <div class="col-sm-6 col-sm-offset-0  col-xs-8 col-xs-offset-2 text-left">
+                                    <a href="formule9a6f.html?page-id=13" class="btn btn-blanc"><i class="fa fa-eye" aria-hidden="true"></i> <span class="hide-desktop">en voir plus</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/INFOS-->
+                    </div>
+                </div>
+            </div>
+                        <div class="row" id="form-14">
+                <div class="col-xs-12">
+                    <div class="box-shadow box-resultat">
+                        <!--IMAGE-->
+                        <div class="col-md-8 col-xs-12 col-md-push-4 image">
+                            <img src="uploads/RocherAiguhilleFace.jpg"> <!-- Image de la formule -->
+                            <h3>MONUMENTS EMBLÉMATIQUES</h3>
+                                                        <div class="col-xs-12 icon">
+                                <p>
+                                                                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-glass fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-university fa-2x" aria-hidden="true"></i>
+                                                                    </p>
+                            </div>
+                                                    </div>
+                        <!--/IMAGE-->
+
+                        <!--INFOS-->
+                        <div class="col-md-4 col-xs-12 col-md-pull-8 info"> <!-- Info sur la formule -->
+                            <div class="row">
+                                <h2 class="col-xs-6 col-md-12">32€<sup>/pers</sup></h2>
+                                <h4 class="col-xs-6 col-md-12">1 JOUR(S)</h4>
+                            </div>
+                            <p class="summury">La chapelle Saint-Michel est une église romane située à Aiguilhe, commune limitrophe du Puy-en-Velay. Elle a été élue 4e monument préféré des français en 2014. L'église est édifiée sur un piton volcanique, le rocher d’Aiguilhe, de 82 mètres de hauteur. La chapelle dédiée à Saint Michel est accessible par un escalier de 268 marches. Selon la légende locale, c'est Gargantua qui donne naissance au rocher d'Aiguilhe. L’évêque Gotescalc, est à l’origine de sa fondation. La première construction, par le chanoine Truanus, remonterait à 969 et remplacerait un temple dédié à Mercure.</p>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                                    <a herf="https://www.tripadvisor.fr/Restaurant_Review-g187092-d4467917-Reviews-La_Distillerie-Le_Puy_en_Velay_Haute_Loire_Auvergne_Rhone_Alpes.html" class=" btn btn-vert">réserver</a> 
+                                </div>
+
+                                <div class="col-sm-6 col-sm-offset-0  col-xs-8 col-xs-offset-2 text-left">
+                                    <a href="formule9e38.html?page-id=14" class="btn btn-blanc"><i class="fa fa-eye" aria-hidden="true"></i> <span class="hide-desktop">en voir plus</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/INFOS-->
+                    </div>
+                </div>
+            </div>
+                        <div class="row" id="form-15">
+                <div class="col-xs-12">
+                    <div class="box-shadow box-resultat">
+                        <!--IMAGE-->
+                        <div class="col-md-8 col-xs-12 col-md-push-4 image">
+                            <img src="uploads/Mezenc%20photo%20internet.jpg"> <!-- Image de la formule -->
+                            <h3>LE MEZENC</h3>
+                                                        <div class="col-xs-12 icon">
+                                <p>
+                                                                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-heartbeat fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-glass fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-tree fa-2x" aria-hidden="true"></i>
+                                                                    </p>
+                            </div>
+                                                    </div>
+                        <!--/IMAGE-->
+
+                        <!--INFOS-->
+                        <div class="col-md-4 col-xs-12 col-md-pull-8 info"> <!-- Info sur la formule -->
+                            <div class="row">
+                                <h2 class="col-xs-6 col-md-12">29€<sup>/pers</sup></h2>
+                                <h4 class="col-xs-6 col-md-12">1 JOUR(S)</h4>
+                            </div>
+                            <p class="summury">Localisé à la frontière de l'Ardèche et de la Haute-Loire, le mont Mézenc, dont les deux sommets culminent à 1 744 mètres et 1 753 mètres d'altitude, est situé dans le Parc Naturel Régional des Monts d'Ardèche, sur la ligne de partage des eaux entre l'Atlantique et la Méditerranée, sur les communes de Borée et Les Estables.
+
+D'origine volcanique, ce dôme de phonolite mérite incontestablement d'être gravi. D'une part pour le panorama grandiose sur le Massif central, la vallée du Rhône et les Alpes qu'il délivre depuis la table d'orientation de son sommet Sud. D'autre part pour sa flore exceptionnelle - grande violette des montagnes, séneçon leucophylle, mais aussi arnicas, épilobes, gentianes, anémones, narcisses... - que les promeneurs férus de nature pourront admirer au printemps durant leur ascension.
+
+L'hiver, la station familiale des Estables et l'espace nordique du Mézenc permettent de s'adonner à la pratique du ski de fond, du ski alpin, de la raquette à neige, du snowkite et du traîneau à chiens.
+
+C'est aussi sur le massif du Mézenc que les gastronomes amateurs de viande finement persillée pourront, entre février et juin, déguster le fameux boeuf fin gras du Mézenc, dont la qualité lui vaut d'être estampillé AOC.</p>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                                    <a herf="https://www.tripadvisor.fr/Restaurant_Review-g1945952-d6637411-Reviews-Auberge_des_Fermiers_du_Mezenc-Les_Estables_Haute_Loire_Auvergne_Rhone_Alpes.html" class=" btn btn-vert">réserver</a> 
+                                </div>
+
+                                <div class="col-sm-6 col-sm-offset-0  col-xs-8 col-xs-offset-2 text-left">
+                                    <a href="formule9a3e.html?page-id=15" class="btn btn-blanc"><i class="fa fa-eye" aria-hidden="true"></i> <span class="hide-desktop">en voir plus</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/INFOS-->
+                    </div>
+                </div>
+            </div>
+                        <div class="row" id="form-16">
+                <div class="col-xs-12">
+                    <div class="box-shadow box-resultat">
+                        <!--IMAGE-->
+                        <div class="col-md-8 col-xs-12 col-md-push-4 image">
+                            <img src="uploads/CloitreEntreeSouterrain.png"> <!-- Image de la formule -->
+                            <h3>LES MYSTÈRES DU PUY-EN-VELAY </h3>
+                                                        <div class="col-xs-12 icon">
+                                <p>
+                                                                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-university fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-tree fa-2x" aria-hidden="true"></i>
+                                                                    </p>
+                            </div>
+                                                    </div>
+                        <!--/IMAGE-->
+
+                        <!--INFOS-->
+                        <div class="col-md-4 col-xs-12 col-md-pull-8 info"> <!-- Info sur la formule -->
+                            <div class="row">
+                                <h2 class="col-xs-6 col-md-12">105€<sup>/pers</sup></h2>
+                                <h4 class="col-xs-6 col-md-12">2 JOUR(S)</h4>
+                            </div>
+                            <p class="summury">Les souterrains du puy: Le cloître du puy en velay et sainte-marie. Ces deux bâtiments ne sont reliés que par un simple point commun: Sous chacun de ces deux lieux connus du Puy en Velay se situe un réseau de couloirs et de caves contenant de nombreuses informations concernant l'héritage de la ville du puy. Les souterrains du cloître vous montrerons l'histoire des channoins et saint-anis. Quant aux souterrains de Sainte-Marie, ils sont aujourd'hui encore remplis de mystères quant à leurs utilités mais la présence d'un cinéma souterrains pourrait supposer qu'il  s'agissait d'une mini ville souterraine pour les résidents de sainte-marie.</p>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                                    <a herf="https://www.tripadvisor.fr/Hotel_Review-g187092-d11700534-Reviews-Demeure_du_Lac_de_Fugeres-Le_Puy_en_Velay_Haute_Loire_Auvergne_Rhone_Alpes.html" class=" btn btn-vert">réserver</a> 
+                                </div>
+
+                                <div class="col-sm-6 col-sm-offset-0  col-xs-8 col-xs-offset-2 text-left">
+                                    <a href="formule220d.html?page-id=16" class="btn btn-blanc"><i class="fa fa-eye" aria-hidden="true"></i> <span class="hide-desktop">en voir plus</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/INFOS-->
+                    </div>
+                </div>
+            </div>
+                        <div class="row" id="form-17">
+                <div class="col-xs-12">
+                    <div class="box-shadow box-resultat">
+                        <!--IMAGE-->
+                        <div class="col-md-8 col-xs-12 col-md-push-4 image">
+                            <img src="uploads/lac-bleu%20photo%20internet.jpg"> <!-- Image de la formule -->
+                            <h3>PAYS DE LA JEUNE LOIRE</h3>
+                                                        <div class="col-xs-12 icon">
+                                <p>
+                                                                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-heartbeat fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-glass fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-tree fa-2x" aria-hidden="true"></i>
+                                                                    </p>
+                            </div>
+                                                    </div>
+                        <!--/IMAGE-->
+
+                        <!--INFOS-->
+                        <div class="col-md-4 col-xs-12 col-md-pull-8 info"> <!-- Info sur la formule -->
+                            <div class="row">
+                                <h2 class="col-xs-6 col-md-12">158€<sup>/pers</sup></h2>
+                                <h4 class="col-xs-6 col-md-12">1 JOUR(S)</h4>
+                            </div>
+                            <p class="summury">Saint Bonnet le Froid est un village perché à 1 159 m d’altitude entre les plateaux du Velay et du Vivarais et entre les départements de l’Ardèche et de la Haute-Loire. Il marque le point de passage entre, d’un côté, la région Rhône-Alpes et la région Auvergne, et d’un autre côté, entre la Vallée du Rhône et le Massif Central. 
+Situé au cœur des forêts de sapins du plateau des Boutières, Saint Bonnet le Froid domine les gorges de la Cance et du Doux. Il est devenu une aire naturelle d’arrêt. 
+Nature et gastronomie, telles sont les deux caractéristiques majeures de Saint Bonnet le Froid. Activités de plein air et découverte de la nature se conjuguent avec la cueillette des myrtilles et des champignons. 
+Grâce à un emplacement de qualité, Saint Bonnet le Froid est le paradis des randonneurs à pied ou en VTT . Traversé par 3 itinéraires de Grandes Randonnées, 3 circuits de Petites Randonnées, 3 circuits découvertes, un circuit VTT et de nombreux circuits cyclotouristes, le village a su développer "l’esprit nature". 
+Et pour ceux qui aiment le patrimoine, vous découvrirez au cours de vos promenades de nombreuses croix, essentiellement des croix de mission et au centre du village une église de style romano-byzantin dont l’intérieur est orné de vitraux 
+Après ces balades, prenez le temps de savourer la gastronomie locale. De la cuisine familiale au restaurant de renommée internationale, le village de Saint Bonnet Le Froid se démarque tout particulièrement dans ce domaine. La cuisine du terroir de "nos chefs", à la fois subtile et créative, vous laissera à n’en pas douter un "savoureux" souvenir des Hauts Plateaux du Velay</p>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                                    <a herf="https://www.tripadvisor.fr/Restaurant_Review-g950950-d2477397-Reviews-Le_Fort_du_Pre_Restaurant-Saint_Bonnet_le_Froid_Haute_Loire_Auvergne_Rhone_Alpes.html" class=" btn btn-vert">réserver</a> 
+                                </div>
+
+                                <div class="col-sm-6 col-sm-offset-0  col-xs-8 col-xs-offset-2 text-left">
+                                    <a href="formule03bb.html?page-id=17" class="btn btn-blanc"><i class="fa fa-eye" aria-hidden="true"></i> <span class="hide-desktop">en voir plus</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/INFOS-->
+                    </div>
+                </div>
+            </div>
+                        <div class="row" id="form-18">
+                <div class="col-xs-12">
+                    <div class="box-shadow box-resultat">
+                        <!--IMAGE-->
+                        <div class="col-md-8 col-xs-12 col-md-push-4 image">
+                            <img src="uploads/cuisine%20photo%20internet.jpg"> <!-- Image de la formule -->
+                            <h3>GASTRONOMIE REPUTEE</h3>
+                                                        <div class="col-xs-12 icon">
+                                <p>
+                                                                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-glass fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-tree fa-2x" aria-hidden="true"></i>
+                                                                    </p>
+                            </div>
+                                                    </div>
+                        <!--/IMAGE-->
+
+                        <!--INFOS-->
+                        <div class="col-md-4 col-xs-12 col-md-pull-8 info"> <!-- Info sur la formule -->
+                            <div class="row">
+                                <h2 class="col-xs-6 col-md-12">310€<sup>/pers</sup></h2>
+                                <h4 class="col-xs-6 col-md-12">1 JOUR(S)</h4>
+                            </div>
+                            <p class="summury">Grâce à une cuisine de terroir mais aussi gastronomique, les chefs se distinguent en Haute-Loire. 
+Préparez-vous à de succulentes dégustations, autour d’une cuisine traditionnelle mais aussi contemporaine et innovante. 
+La cuisine auvergnate est basée sur la qualité des produits locaux. </p>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                                    <a herf="https://www.tripadvisor.fr/Restaurant_Review-g950950-d967560-Reviews-Hotel_Restaurant_Regis_Jacques_Marcon-Saint_Bonnet_le_Froid_Haute_Loire_Auvergne_R.html" class=" btn btn-vert">réserver</a> 
+                                </div>
+
+                                <div class="col-sm-6 col-sm-offset-0  col-xs-8 col-xs-offset-2 text-left">
+                                    <a href="formulec335.html?page-id=18" class="btn btn-blanc"><i class="fa fa-eye" aria-hidden="true"></i> <span class="hide-desktop">en voir plus</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/INFOS-->
+                    </div>
+                </div>
+            </div>
+                        <div class="row" id="form-19">
+                <div class="col-xs-12">
+                    <div class="box-shadow box-resultat">
+                        <!--IMAGE-->
+                        <div class="col-md-8 col-xs-12 col-md-push-4 image">
+                            <img src="uploads/Mezenc%20photo%20internet.jpg"> <!-- Image de la formule -->
+                            <h3>ACTIVITÉS NORDIQUES</h3>
+                                                        <div class="col-xs-12 icon">
+                                <p>
+                                                                        <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-heartbeat fa-2x" aria-hidden="true"></i>
+                                                                        <i class="fa fa-tree fa-2x" aria-hidden="true"></i>
+                                                                    </p>
+                            </div>
+                                                    </div>
+                        <!--/IMAGE-->
+
+                        <!--INFOS-->
+                        <div class="col-md-4 col-xs-12 col-md-pull-8 info"> <!-- Info sur la formule -->
+                            <div class="row">
+                                <h2 class="col-xs-6 col-md-12">72€<sup>/pers</sup></h2>
+                                <h4 class="col-xs-6 col-md-12">1 JOUR(S)</h4>
+                            </div>
+                            <p class="summury">Avec ses grands espaces, ses hauts plateaux, une grande variété de paysages couronnés de panoramas à 360 °, la station village des Estables offre un large panel d’activités dans un décor unique. Ainsi, vous pourrez faire du ski de fond, du ski alpin, du snowboard, du snowkite, du parapente à ski, du patinage, de belles randonnées en raquettes et excursions en chiens de traîneaux. Après une journée riche en émotions et sensations, vous apprécierez d’autant plus les spécialités locales dans une ambiance cosy au coin du feu.</p>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                                    <a herf="https://www.tripadvisor.fr/Restaurant_Review-g1945952-d4228598-Reviews-La_Maison_Forestiere-Les_Estables_Haute_Loire_Auvergne_Rhone_Alpes.html" class=" btn btn-vert">réserver</a> 
+                                </div>
+
+                                <div class="col-sm-6 col-sm-offset-0  col-xs-8 col-xs-offset-2 text-left">
+                                    <a href="formule6365.html?page-id=19" class="btn btn-blanc"><i class="fa fa-eye" aria-hidden="true"></i> <span class="hide-desktop">en voir plus</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/INFOS-->
+                    </div>
+                </div>
+            </div>
+                        <!--FIN LISTE DES FORMULES-->
+
+        </div> <!-- /fin/ Contenu à gauche --> 
+        <!--FIN RESULTATS DE RECHERCHE-->
+    </div>
+</div> <!-- /fin/ container-fluid -->
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("label.list-box").on("touch click", function(){
+            $(this).parent("li").toggleClass("is-open");
+        });
+
+        $("#range").next().text($("#range").attr("value")); // Valeur par défaut
+        var $set = $("#range").val();
+        $("#range").parent().find('.range-progress').attr("style", "width: "+Math.round((parseInt($set)-1) * (100/6))+"%;");
+
+        switch($set){
+            case "1" :
+                console.log("oui");
+                $("#range").next().attr("style", "left :"+Math.round((parseInt($set)-1) * (100/6))+"%; transform:translateX(-20%);");
+                break;
+
+            case "2" :
+                $("#range").next().attr("style", "left :"+Math.round((parseInt($set)-1) * (100/6))+"%; transform:translateX(-37%);");
+                break;
+
+            case "3" :
+                $("#range").next().attr("style", "left :"+Math.round((parseInt($set)-1) * (100/6))+"%; transform:translateX(-37%);");
+                break;
+
+            case "4" :
+                $("#range").next().attr("style", "left :"+Math.round((parseInt($set)-1) * (100/6))+"%; transform:translateX(-56%);");
+                break; 
+
+            case "5" :
+                $("#range").next().attr("style", "left :"+Math.round((parseInt($set)-1) * (100/6))+"%; transform:translateX(-72%);");
+                break;
+
+            case "6" :
+                $("#range").next().attr("style", "left :"+Math.round((parseInt($set)-1) * (100/6))+"%; transform:translateX(-72%);");
+                break;
+
+            case "7" :
+                $("#range").next().attr("style", "left :"+Math.round((parseInt($set)-1) * (100/6))+"%; transform:translateX(-90%);");
+                break;
+                   }
+
+        $("#to-hide-trig").on("click touch", function(){
+            $(".to-hide").toggleClass("is-open");
+        });
+
+    });
+    $(function() {
+        $("#range").next().text($("#range").attr("value")); // Valeur par défaut
+        $("#range").on("input", function() {
+            var $set = $(this).val();
+            $(this).next().text($set);
+            $(this).parent().find('.range-progress').attr("style", "width: "+Math.round((parseInt($set)-1) * (100/6))+"%;");
+
+            switch($set){
+                case "1" :
+                    $(this).next().attr("style", "left :"+Math.round((parseInt($set)-1) * (100/6))+"%; transform:translateX(-20%);");
+                    break;
+
+                case "2" :
+                    $(this).next().attr("style", "left :"+Math.round((parseInt($set)-1) * (100/6))+"%; transform:translateX(-37%);");
+                    break;
+
+                case "3" :
+                    $(this).next().attr("style", "left :"+Math.round((parseInt($set)-1) * (100/6))+"%; transform:translateX(-37%);");
+                    break;
+
+                case "4" :
+                    $(this).next().attr("style", "left :"+Math.round((parseInt($set)-1) * (100/6))+"%; transform:translateX(-56%);");
+                    break; 
+
+                case "5" :
+                    $(this).next().attr("style", "left :"+Math.round((parseInt($set)-1) * (100/6))+"%; transform:translateX(-72%);");
+                    break;
+
+                case "6" :
+                    $(this).next().attr("style", "left :"+Math.round((parseInt($set)-1) * (100/6))+"%; transform:translateX(-72%);");
+                    break;
+
+                case "7" :
+                    $(this).next().attr("style", "left :"+Math.round((parseInt($set)-1) * (100/6))+"%; transform:translateX(-90%);");
+                    break;
+                       }
+
+        });
+    });
+</script>
+
+
+<!-- FOOTER -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#menu-trig").on("touch click", function(){
+            $(this).toggleClass("icon-close");
+            $(this).toggleClass("icon-menu");
+        });
+    });
+</script>
+
+<div class="container-fluid footer">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <h4>ALTI'UDE</h4>
+                    <p>Et olim licet otiosae sint tribus pacataeque centuriae et nulla suffragiorum certamina set Pompiliani redierit securitas temporis, per omnes tamen quotquot sunt partes terrarum, ut domina sm eomnes tamen quotquot st vt otiosae sint tribus perecundum.</p>
+                </div>
+
+                <div class="col-md-4 col-xs-8">
+                    <h4>CONTACT</h4>
+                    <p>4 rues des Lauriers <br>43 000 Le Puy en Velay</p>
+                    <p>04 05 06 07 08 </p>
+                    <p>alti’ude@contact.fr</p>
+                </div>
+
+                <div class="col-md-2 col-xs-4 text-right">
+                    <a href="#"><i class="fa fa-facebook-square fa-1x social-media" aria-hidden="true"></i></a><br>
+                    <a href="#"><i class="fa fa-twitter fa-1x social-media" aria-hidden="true"></i></a><br>
+                    <a href="#"><i class="fa fa-instagram fa-1x social-media" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 text-right copyright">
+                    <p>2017 - Alti’ude ©</p>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<!-- /FOOTER -->
+
+</body>
+
+<!-- Mirrored from web-week-2017-diablo.tp.mmi-lepuy.fr/search.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Dec 2017 11:38:17 GMT -->
+</html>
+            

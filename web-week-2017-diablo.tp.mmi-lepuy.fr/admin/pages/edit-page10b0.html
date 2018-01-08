@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Mirrored from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/edit-page.php?state=edit&page-id=17 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Dec 2017 12:03:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Éditer une page</title>
+
+    <!-- Icons -->
+    <link href="../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Main styles for this application -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- Styles required by this views -->
+    <link href="../../css/admin.css" rel="stylesheet">
+    
+    <script src="../../js/jquery.min.js"></script>
+    
+    <script src='../js/tinymce/tinymce.min.js'></script><script type='text/javascript'>
+        $(document).ready(function(){
+            tinymce.init({
+                selector : '#text-editor',
+                content_css : 'planning-stylesheet.css, ../../css/font-awesome.min.css',
+                height: 500,
+                toolbar1: 'formatselect | bold italic strikethrough forecolor backcolor | link | alignleft aligncenter alignright alignjustify  | numlist bullist outdent indent  | removeformat | start_btn new_btn',
+                setup: function(editor){
+                    editor.addButton('start_btn', {
+                      text: 'Débuter le planning',
+                      icon: false,
+                      onclick: function () {
+                        editor.insertContent('<div class="col-sm-offset-2 col-md-8 planning"><h2 class="title-planning">Planning du séjour</h2><p class="teaser">Une super phrase d\'accroche</p></div>');
+                      }
+                    });
+                    
+                    editor.addButton('new_btn', {
+                      text: 'Insérer une nouvelle étape',
+                      icon: false,
+                      onclick: function () {
+                        editor.insertContent('<div class="col-md-7"><h3>L\'heure de l\'étape</h3><h4>Libellé de l\'étape</h4><p>Super texte descriptif de la mort qui tue.</p></div><p>[à supprimer, sert juste à pouvoir insérer d\'autres étapes]</p>', {paste:true, merge: true});
+                      }
+                    });
+                  
+                  },
+                  
+                  
+            });
+            
+        });
+    </script>
+</head> 
+  
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+        <!--HEADER-->
+        <header class="app-header navbar ">
+            <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item d-md-down-none">
+                    Bonjour, John Doe                </li>
+                <li class="nav-item d-md-down-none">
+                    <a class="nav-link loggout-btn" href="#"><i class="icon-logout"></i> Se déconnecter </a>
+                </li>
+            </ul>
+        </header>
+        <!--/HEADER-->
+   
+    
+<!--BODY-->
+<div class="app-body">
+
+    <div class="sidebar">
+        <!--MENU SIDEBAR-->
+         
+<nav class="sidebar-nav">
+    <ul class="nav">
+                <li class="nav-item">
+            <a class="nav-link " href="../index-2.html"><i class="icon-speedometer"></i> Accueil</a>
+        </li>
+                <li class="nav-title">
+            Contenu        </li>
+                <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle " href="#"><i class="icon-doc"></i> Pages</a>
+            
+            <ul class="nav-dropdown-items">
+                                <li class="nav-item">
+                    <a class="nav-link " href="edit-page6fdc.html?state=new"><i class="icon-plus"></i> Créer une page</a>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link " href="list-page.html"><i class="icon-eye"></i> Voir les pages</a>
+                </li>
+                            </ul>
+        </li>
+                <li class="nav-item">
+            <a class="nav-link " href="image-uploader-page.html"><i class="icon-picture"></i> Ajouter/Supprimer des images</a>
+        </li>
+                <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle " href="#"><i class="icon-drawer"></i> Catégories</a>
+            
+            <ul class="nav-dropdown-items">
+                                <li class="nav-item">
+                    <a class="nav-link " href="../cat/edit-cat6fdc.html?state=new"><i class="icon-plus"></i> Créer une catégorie</a>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link " href="../cat/list-cat.html"><i class="icon-eye"></i> Voir les catégories</a>
+                </li>
+                            </ul>
+        </li>
+            </ul>
+</nav>   
+<button class="sidebar-minimizer brand-minimizer" type="button"></button>    
+    
+        <!--MENU SIDEBAR-->
+    </div>
+
+    <!-- Main content -->
+    <main class="main">
+
+        <!--MAIN CONTENTE AREA-->
+        <form method="post" class="container-fluid mb-5 mt-2"  action="http://web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/edit-page-script.php"  enctype="multipart/form-data"><div class="animated fadeIn">
+            <div class="row">
+
+                <!--MAIN CARD-->
+                <div class="col-12 col-md-8 mt-5">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="col-12">
+                                <h4 class="card-title">Éditer une page </h4>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="col-12">
+                                <label class="form-group">
+                                    <span class="big">Titre de la page :</span>
+                                    <input type="text" placeholder="Titre de la page..." name="page-title" required maxlength="255" class="form-control" value="PAYS DE LA JEUNE LOIRE">
+                                </label> 
+                            </div> 
+
+                            <div class="col-12 mt-3 mb-2">
+                                <label class="form-group">
+                                    Description de la formule
+                                    <textarea name="description" class="form-control" placeholder="Courte description de la formule a afficher en haut de la page produit et dans les résultats de recherche...">Saint Bonnet le Froid est un village perché à 1 159 m d’altitude entre les plateaux du Velay et du Vivarais et entre les départements de l’Ardèche et de la Haute-Loire. Il marque le point de passage entre, d’un côté, la région Rhône-Alpes et la région Auvergne, et d’un autre côté, entre la Vallée du Rhône et le Massif Central. 
+Situé au cœur des forêts de sapins du plateau des Boutières, Saint Bonnet le Froid domine les gorges de la Cance et du Doux. Il est devenu une aire naturelle d’arrêt. 
+Nature et gastronomie, telles sont les deux caractéristiques majeures de Saint Bonnet le Froid. Activités de plein air et découverte de la nature se conjuguent avec la cueillette des myrtilles et des champignons. 
+Grâce à un emplacement de qualité, Saint Bonnet le Froid est le paradis des randonneurs à pied ou en VTT . Traversé par 3 itinéraires de Grandes Randonnées, 3 circuits de Petites Randonnées, 3 circuits découvertes, un circuit VTT et de nombreux circuits cyclotouristes, le village a su développer "l’esprit nature". 
+Et pour ceux qui aiment le patrimoine, vous découvrirez au cours de vos promenades de nombreuses croix, essentiellement des croix de mission et au centre du village une église de style romano-byzantin dont l’intérieur est orné de vitraux 
+Après ces balades, prenez le temps de savourer la gastronomie locale. De la cuisine familiale au restaurant de renommée internationale, le village de Saint Bonnet Le Froid se démarque tout particulièrement dans ce domaine. La cuisine du terroir de "nos chefs", à la fois subtile et créative, vous laissera à n’en pas douter un "savoureux" souvenir des Hauts Plateaux du Velay</textarea>
+                                </label>
+                            </div>
+
+                            <div class="col-12 mt-3 mb-5">
+                                <h4>Planning de la formule</h4>
+                                <textarea id="text-editor" name="content"><div class="col-sm-offset-2 col-md-8 planning">
+<h2 class="title-planning">Planning du s&eacute;jour</h2>
+<p class="teaser">Une super phrase d'accroche</p>
+<div class="col-md-7">
+<h3>10h</h3>
+<h4>VISITE DU LAC BLEU</h4>
+<p>Ballade autour du Lac bleu, vous pourrez voir des reproductions miniatures des &eacute;difices de la r&eacute;gion &agrave; partir de pierre et lauzes locales.</p>
+</div>
+<div>
+<h3>12h30</h3>
+<h4>D&Eacute;JEUNER AU RESTAURANT CHATELARD</h4>
+<p>Situ&eacute; &agrave; Saint-Bonnet-le-Froid, petit village accueillant et dynamique, le restaurant CHATELARD&nbsp;&agrave; caract&egrave;re familial propose la mise en valeur des produits locaux propos&eacute;s avec un brin d'originalit&eacute;.</p>
+</div>
+<div>
+<h3>14h30</h3>
+<h4>APRES-MIDI&nbsp;SPA DES SOURCES DU HAUT-PLATEAU</h4>
+<h4>&nbsp;</h4>
+<p>Perch&eacute;s &agrave; 1130 m&egrave;tres d&rsquo;altitude, &agrave; Saint-Bonnet-le-Froid, les Sources du Haut Plateau et son spa sont une invitation &agrave; la "Montagnoth&eacute;rapie": le bien &ecirc;tre et la d&eacute;tente en moyenne montagne et au grand air.</p>
+</div>
+<div class="col-md-7">
+<h3>19h30</h3>
+<h4>DINER A H&Ocirc;TEL-RESTAURANT " LE FORT DU PRE "</h4>
+<h4>FIN DU SEJOUR</h4>
+</div>
+</div></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="img-list row">
+                                    <h4 class="col-12 mb-4">Images de la page</h4>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="CatheFaceClassique.jpg" class="hidden-check" id="CatheFaceClassique.jpg" >
+                                                                                <label for="CatheFaceClassique.jpg">
+                                            <img src="../../uploads/CatheFaceClassique.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="CatheFaceIncline.jpg" class="hidden-check" id="CatheFaceIncline.jpg" >
+                                                                                <label for="CatheFaceIncline.jpg">
+                                            <img src="../../uploads/CatheFaceIncline.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="CatheTroisQuart.jpg" class="hidden-check" id="CatheTroisQuart.jpg" >
+                                                                                <label for="CatheTroisQuart.jpg">
+                                            <img src="../../uploads/CatheTroisQuart.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="CloitreBatimentTour.jpg" class="hidden-check" id="CloitreBatimentTour.jpg" >
+                                                                                <label for="CloitreBatimentTour.jpg">
+                                            <img src="../../uploads/CloitreBatimentTour.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="CloitreEntree.jpg" class="hidden-check" id="CloitreEntree.jpg" >
+                                                                                <label for="CloitreEntree.jpg">
+                                            <img src="../../uploads/CloitreEntree.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="CloitreEntreeSouterrain.png" class="hidden-check" id="CloitreEntreeSouterrain.png" >
+                                                                                <label for="CloitreEntreeSouterrain.png">
+                                            <img src="../../uploads/CloitreEntreeSouterrain.png">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="Ellipse 3.png" class="hidden-check" id="Ellipse 3.png" >
+                                                                                <label for="Ellipse 3.png">
+                                            <img src="../../uploads/Ellipse%203.png">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="GifCamino.gif" class="hidden-check" id="GifCamino.gif" >
+                                                                                <label for="GifCamino.gif">
+                                            <img src="../../uploads/GifCamino.gif">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="GifCamino.jpg" class="hidden-check" id="GifCamino.jpg" >
+                                                                                <label for="GifCamino.jpg">
+                                            <img src="../../uploads/GifCamino.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="GifFontaine.jpg" class="hidden-check" id="GifFontaine.jpg" >
+                                                                                <label for="GifFontaine.jpg">
+                                            <img src="../../uploads/GifFontaine.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="GifFumee.jpg" class="hidden-check" id="GifFumee.jpg" >
+                                                                                <label for="GifFumee.jpg">
+                                            <img src="../../uploads/GifFumee.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="LacBleuCheminEnviront.jpg" class="hidden-check" id="LacBleuCheminEnviront.jpg" checked>
+                                                                                <label for="LacBleuCheminEnviront.jpg">
+                                            <img src="../../uploads/LacBleuCheminEnviront.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="LacBleuEnvirontNeige.jpg" class="hidden-check" id="LacBleuEnvirontNeige.jpg" >
+                                                                                <label for="LacBleuEnvirontNeige.jpg">
+                                            <img src="../../uploads/LacBleuEnvirontNeige.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="LacBleuLac.png" class="hidden-check" id="LacBleuLac.png" checked>
+                                                                                <label for="LacBleuLac.png">
+                                            <img src="../../uploads/LacBleuLac.png">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="LacBleuNature.jpg" class="hidden-check" id="LacBleuNature.jpg" >
+                                                                                <label for="LacBleuNature.jpg">
+                                            <img src="../../uploads/LacBleuNature.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="Mezenc photo internet.jpg" class="hidden-check" id="Mezenc photo internet.jpg" >
+                                                                                <label for="Mezenc photo internet.jpg">
+                                            <img src="../../uploads/Mezenc%20photo%20internet.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="PierreGauloise.png" class="hidden-check" id="PierreGauloise.png" >
+                                                                                <label for="PierreGauloise.png">
+                                            <img src="../../uploads/PierreGauloise.png">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="RM photo internet.jpg" class="hidden-check" id="RM photo internet.jpg" >
+                                                                                <label for="RM photo internet.jpg">
+                                            <img src="../../uploads/RM%20photo%20internet.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="RiviereMoulinVert.jpg" class="hidden-check" id="RiviereMoulinVert.jpg" >
+                                                                                <label for="RiviereMoulinVert.jpg">
+                                            <img src="../../uploads/RiviereMoulinVert.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="RiviereTherme.jpg" class="hidden-check" id="RiviereTherme.jpg" >
+                                                                                <label for="RiviereTherme.jpg">
+                                            <img src="../../uploads/RiviereTherme.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="RocherAiguhilleFace.jpg" class="hidden-check" id="RocherAiguhilleFace.jpg" >
+                                                                                <label for="RocherAiguhilleFace.jpg">
+                                            <img src="../../uploads/RocherAiguhilleFace.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="RocherAiguhilleProfile.jpg" class="hidden-check" id="RocherAiguhilleProfile.jpg" >
+                                                                                <label for="RocherAiguhilleProfile.jpg">
+                                            <img src="../../uploads/RocherAiguhilleProfile.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="SKIDEFOND photo internet.jpg" class="hidden-check" id="SKIDEFOND photo internet.jpg" >
+                                                                                <label for="SKIDEFOND photo internet.jpg">
+                                            <img src="../../uploads/SKIDEFOND%20photo%20internet.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="SanctuaireFace.png" class="hidden-check" id="SanctuaireFace.png" >
+                                                                                <label for="SanctuaireFace.png">
+                                            <img src="../../uploads/SanctuaireFace.png">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="Sante-burgomcollaslug.jpg" class="hidden-check" id="Sante-burgomcollaslug.jpg" >
+                                                                                <label for="Sante-burgomcollaslug.jpg">
+                                            <img src="../../uploads/Sante-burgomcollaslug.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="ViergeFace.jpg" class="hidden-check" id="ViergeFace.jpg" >
+                                                                                <label for="ViergeFace.jpg">
+                                            <img src="../../uploads/ViergeFace.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="ViergePlace.jpg" class="hidden-check" id="ViergePlace.jpg" >
+                                                                                <label for="ViergePlace.jpg">
+                                            <img src="../../uploads/ViergePlace.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="Vinyl-Record-and-Cover-Presentation-Mock-up-lg.jpg" class="hidden-check" id="Vinyl-Record-and-Cover-Presentation-Mock-up-lg.jpg" >
+                                                                                <label for="Vinyl-Record-and-Cover-Presentation-Mock-up-lg.jpg">
+                                            <img src="../../uploads/Vinyl-Record-and-Cover-Presentation-Mock-up-lg.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="cuisine photo internet.jpg" class="hidden-check" id="cuisine photo internet.jpg" >
+                                                                                <label for="cuisine photo internet.jpg">
+                                            <img src="../../uploads/cuisine%20photo%20internet.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="image.jpg" class="hidden-check" id="image.jpg" >
+                                                                                <label for="image.jpg">
+                                            <img src="../../uploads/image.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="lac-bleu photo internet.jpg" class="hidden-check" id="lac-bleu photo internet.jpg" checked>
+                                                                                <label for="lac-bleu photo internet.jpg">
+                                            <img src="../../uploads/lac-bleu%20photo%20internet.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="logo.png" class="hidden-check" id="logo.png" >
+                                                                                <label for="logo.png">
+                                            <img src="../../uploads/logo.png">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="photo internet estables.jpg" class="hidden-check" id="photo internet estables.jpg" >
+                                                                                <label for="photo internet estables.jpg">
+                                            <img src="../../uploads/photo%20internet%20estables.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="photo internet.jpg" class="hidden-check" id="photo internet.jpg" >
+                                                                                <label for="photo internet.jpg">
+                                            <img src="../../uploads/photo%20internet.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="photo internet2.jpg" class="hidden-check" id="photo internet2.jpg" >
+                                                                                <label for="photo internet2.jpg">
+                                            <img src="../../uploads/photo%20internet2.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="riva message 1.jpg" class="hidden-check" id="riva message 1.jpg" >
+                                                                                <label for="riva message 1.jpg">
+                                            <img src="../../uploads/riva%20message%201.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="spa photo internet.jpg" class="hidden-check" id="spa photo internet.jpg" checked>
+                                                                                <label for="spa photo internet.jpg">
+                                            <img src="../../uploads/spa%20photo%20internet.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="village photo internet.jpg" class="hidden-check" id="village photo internet.jpg" >
+                                                                                <label for="village photo internet.jpg">
+                                            <img src="../../uploads/village%20photo%20internet.jpg">
+                                        </label>
+                                    </div>
+                                                                        <div class="col-6 col-md-4" >
+                                                                                <input type="checkbox" name="cover_pics[]" value="village.jpg" class="hidden-check" id="village.jpg" >
+                                                                                <label for="village.jpg">
+                                            <img src="../../uploads/village.jpg">
+                                        </label>
+                                    </div>
+                                                                    </div> 
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--/MAIN-CARD-->
+
+                <!--SIDE CARD-->
+                <div class="col-12 col-md-4 col-md-offset-1 mt-5">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="col-12">
+                                <h4 class="card-title">Paramètres</h4>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <div class="col-12 mb-2">
+                                <label class="form-group">
+                                    Prix de la formule en €
+                                    <div class="input-group">
+                                        <input type="number" name="price" placeholder="Prix de la formule en €..." class="form-control text-right" min="0" value="158" style="padding-right: 0;">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-euro"></i>
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="col-12 mb-2">
+                                <label class="form-group">
+                                    Lien vers la réservation
+                                    <input type="url" name="link" placeholder="Lien vers la réservation de la formule..." class="form-control" value="https://www.tripadvisor.fr/Restaurant_Review-g950950-d2477397-Reviews-Le_Fort_du_Pre_Restaurant-Saint_Bonnet_le_Froid_Haute_Loire_Auvergne_Rhone_Alpes.html">
+                                </label>
+                            </div>  
+
+                            <div class="col-12 mb-2">
+                                <label class="form-group">
+                                    Durée de la formule en jours
+                                    <div class="input-group">
+                                       
+                                        <input type="number" name="duree" placeholder="Durée de la formule en jours..." class="form-control text-right" value="1" style="padding-right:0;" min="1" max="7">
+                                        <span class="input-group-addon">
+                                            Jour(s)
+                                        </span>
+                                    </div>
+                                </label>
+                            </div> 
+
+                            <div class="col-12 mb-2">
+                                <div class="form-group cat-list">
+                                    Catégorie de la formule
+                                    <hr/>
+                                    <div class="cat-list-wrapper">
+                                                                                <label>
+                                                                                                                                    <input type="checkbox" name="cats[]" value="8" checked>
+                                                                                                                                        <i class="fa fa-heart"></i> 
+                                                                                        En couple                                            
+                                        </label>
+                                                                                <label>
+                                                                                                                                    <input type="checkbox" name="cats[]" value="9" checked>
+                                                                                                                                        <i class="fa fa-user"></i> 
+                                                                                        En famille                                            
+                                        </label>
+                                                                                <label>
+                                                                                                                                    <input type="checkbox" name="cats[]" value="10" checked>
+                                                                                                                                        <i class="fa fa-heartbeat"></i> 
+                                                                                        Sport                                            
+                                        </label>
+                                                                                <label>
+                                                                                                                                    <input type="checkbox" name="cats[]" value="11" checked>
+                                                                                                                                        <i class="fa fa-glass"></i> 
+                                                                                        Gastronomie                                            
+                                        </label>
+                                                                                <label>
+                                                                                                                                    <input type="checkbox" name="cats[]" value="12">
+                                                                                                                                        <i class="fa fa-university"></i> 
+                                                                                        Ville                                             
+                                        </label>
+                                                                                <label>
+                                                                                                                                    <input type="checkbox" name="cats[]" value="13" checked>
+                                                                                                                                        <i class="fa fa-tree"></i> 
+                                                                                        Nature                                            
+                                        </label>
+                                                                            </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="text-center">
+                                    <a class="secondary-outline-btn custom-btn" href="../cat/edit-cat6fdc.html?state=new">Ajouter une catégorie</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-2 mb-5 text-center">
+                                                        <input type="hidden" name="post_ID" value="17">
+                                                        <button type="submit" class="primary-outline-btn custom-btn">Mettre à jour</button>
+                        </div>
+                    </div>
+                </div>
+                <!--SIDE CARD-->
+
+            </div>
+
+            </div></form>
+        <!-- /.conainer-fluid -->
+
+    </main>
+
+</div>
+
+<script type="text/javascript" src="../js/plupload/plupload.full.min.js"></script>
+<script type="text/javascript">
+    var uploader = new plupload.Uploader({
+        runtimes : 'html5',
+        containes : 'uploader',
+        browse_button : 'browse',
+        drop_element: "droparea",
+        url : 'uploader.php',
+        multipart : true,
+        urlstream_upload : true,
+        //                multipart_params:{directory: 'test'},
+        resize: {width: 1280, height: 720, quality: 90},
+        filters : {
+            mime_types : [
+                {title : 'Images', extensions : 'jpg,gif,jpeg,png'}
+            ],
+            //                    max_file_size : 2000000,
+            max_file_size : "2M",
+            prevent_duplicates : true,
+        }
+    });
+
+    uploader.init();
+
+    uploader.bind('FilesAdded', function(up, files){
+        var filelist = $('#filelist');
+        for(var i in files){
+            var file = files[i];
+            filelist.prepend('<li id="'+file.id+'" class="file row"><div class="col-12 col-md-8">'+file.name+'</div><div class="progressbar col-12 col-md-2"><div class="progress"></div></div></div></li>');
+        }
+        $("#droparea").removeClass('is-hovered');
+        uploader.start(); 
+        //                uploader.refresh();
+    });
+
+    uploader.bind("UploadProgress", function(up, file){
+        $("#"+file.id).find('.progress').css('width', file.percent+'%');
+        console.log(file.percent);
+    });
+
+    uploader.bind("FileUploaded", function(up, file, response){
+        data = $.parseJSON(response.response);
+        //                data = response;
+        console.log(data);
+        //                console.log(response);
+        if(data.error == true){
+            window.alert(data.message);
+        } else {
+            //à mettre quand c'est bon, genre supprimer la progress bar
+            $('#'+file.id).replaceWith(data.html);
+        }
+    });
+
+    $("#droparea").bind({
+        dragover : function(e){
+            $(this).addClass('is-hovered');
+        },
+        dragleave : function(e){
+            $(this).removeClass('is-hovered');
+        }
+    });
+
+    uploader.bind("Error", function(up, err){
+        window.alert(err.message);
+        $("#droparea").removeClass("is-hovered");
+        uploader.refresh();
+    });
+
+    //suppression 
+    $(".delete").on('click', function(e){
+        e.preventDefault();
+        if(confirm('Voulez-vous réellement supprimer ce fichier ?')){
+            $.get('uploader.html', {action: 'delete', file : $(this).attr('href')});
+            $(this).parent().parent().slideUp();
+            //ajouter suppression de la div;
+        }
+    });
+
+</script>
+
+
+        <footer class="app-footer">
+            <span><a href="http://coreui.io/">CoreUI</a> © 2017 creativeLabs.</span>
+            <span class="ml-auto">Powered by <a href="http://coreui.io/">CoreUI</a></span>
+        </footer>
+
+        <!-- Bootstrap and necessary plugins -->
+        <script src="../../js/popper.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/pace.min.js"></script>
+
+        <!-- CoreUI main scripts -->
+
+        <script src="../js/app.js"></script>
+
+        <!-- Plugins and scripts required by this views -->
+
+
+    </body>
+
+<!-- Mirrored from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/edit-page.php?state=edit&page-id=17 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Dec 2017 12:03:56 GMT -->
+</html>
+

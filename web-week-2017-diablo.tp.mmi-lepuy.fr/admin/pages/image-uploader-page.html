@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Mirrored from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Dec 2017 11:58:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Images</title>
+
+    <!-- Icons -->
+    <link href="../../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Main styles for this application -->
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- Styles required by this views -->
+    <link href="../../css/admin.css" rel="stylesheet">
+    
+    <script src="../../js/jquery.min.js"></script>
+    
+    
+</head> 
+  
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+        <!--HEADER-->
+        <header class="app-header navbar ">
+            <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item d-md-down-none">
+                    Bonjour, John Doe                </li>
+                <li class="nav-item d-md-down-none">
+                    <a class="nav-link loggout-btn" href="#"><i class="icon-logout"></i> Se déconnecter </a>
+                </li>
+            </ul>
+        </header>
+        <!--/HEADER-->
+   
+    
+        <!--BODY-->
+        <div class="app-body">
+           
+            <div class="sidebar">
+                <!--MENU SIDEBAR-->
+                 
+<nav class="sidebar-nav">
+    <ul class="nav">
+                <li class="nav-item">
+            <a class="nav-link " href="../index-2.html"><i class="icon-speedometer"></i> Accueil</a>
+        </li>
+                <li class="nav-title">
+            Contenu        </li>
+                <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle " href="#"><i class="icon-doc"></i> Pages</a>
+            
+            <ul class="nav-dropdown-items">
+                                <li class="nav-item">
+                    <a class="nav-link " href="edit-page6fdc.html?state=new"><i class="icon-plus"></i> Créer une page</a>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link " href="list-page.html"><i class="icon-eye"></i> Voir les pages</a>
+                </li>
+                            </ul>
+        </li>
+                <li class="nav-item">
+            <a class="nav-link " href="image-uploader-page.html"><i class="icon-picture"></i> Ajouter/Supprimer des images</a>
+        </li>
+                <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle " href="#"><i class="icon-drawer"></i> Catégories</a>
+            
+            <ul class="nav-dropdown-items">
+                                <li class="nav-item">
+                    <a class="nav-link " href="../cat/edit-cat6fdc.html?state=new"><i class="icon-plus"></i> Créer une catégorie</a>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link " href="../cat/list-cat.html"><i class="icon-eye"></i> Voir les catégories</a>
+                </li>
+                            </ul>
+        </li>
+            </ul>
+</nav>   
+<button class="sidebar-minimizer brand-minimizer" type="button"></button>    
+    
+                <!--MENU SIDEBAR-->
+            </div>
+
+            <!-- Main content -->
+            <main class="main">
+               
+                <!--MAIN CONTENTE AREA-->
+                <div class="container-fluid">
+                    <div class="animated fadeIn">
+                        
+                        <div class="card mt-5">
+                          <div class="card-header">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4 class="card-title">Ajouter et Supprimer des images</h4>
+                                    </div>
+                              </div>
+                          </div>
+                          
+                           <div class="card-body">
+                                <div id="uploader">
+                                    <div id="droparea" class="text-center col-12 mt-2 mb-3">
+                                        <div class="browse-wrapper">
+                                            <h2>Déposer des fichiers</h2>
+                                            <p><b>Taille maximum : 2Mo</b></p>
+                                            <a href="#" class="secondary-outline-btn custom-btn" id="browse">Parcourir</a>
+                                        </div>
+
+                                    </div>
+                                   <ul id="filelist">
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/CatheFaceClassique.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">CatheFaceClassique.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="CatheFaceClassique.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/CatheFaceIncline.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">CatheFaceIncline.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="CatheFaceIncline.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/CatheTroisQuart.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">CatheTroisQuart.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="CatheTroisQuart.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/CloitreBatimentTour.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">CloitreBatimentTour.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="CloitreBatimentTour.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/CloitreEntree.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">CloitreEntree.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="CloitreEntree.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/CloitreEntreeSouterrain.png">
+                                           </div>
+                                           <div class="col-12 col-md-7">CloitreEntreeSouterrain.png</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="CloitreEntreeSouterrain.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/Ellipse%203.png">
+                                           </div>
+                                           <div class="col-12 col-md-7">Ellipse 3.png</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="Ellipse%203.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/GifCamino.gif">
+                                           </div>
+                                           <div class="col-12 col-md-7">GifCamino.gif</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="GifCamino.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/GifCamino.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">GifCamino.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="GifCamino-2.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/GifFontaine.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">GifFontaine.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="GifFontaine.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/GifFumee.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">GifFumee.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="GifFumee.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/LacBleuCheminEnviront.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">LacBleuCheminEnviront.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="LacBleuCheminEnviront.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/LacBleuEnvirontNeige.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">LacBleuEnvirontNeige.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="LacBleuEnvirontNeige.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/LacBleuLac.png">
+                                           </div>
+                                           <div class="col-12 col-md-7">LacBleuLac.png</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="LacBleuLac.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/LacBleuNature.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">LacBleuNature.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="LacBleuNature.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/Mezenc%20photo%20internet.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">Mezenc photo internet.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="Mezenc%20photo%20internet.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/PierreGauloise.png">
+                                           </div>
+                                           <div class="col-12 col-md-7">PierreGauloise.png</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="PierreGauloise.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/RM%20photo%20internet.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">RM photo internet.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="RM%20photo%20internet.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/RiviereMoulinVert.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">RiviereMoulinVert.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="RiviereMoulinVert.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/RiviereTherme.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">RiviereTherme.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="RiviereTherme.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/RocherAiguhilleFace.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">RocherAiguhilleFace.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="RocherAiguhilleFace.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/RocherAiguhilleProfile.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">RocherAiguhilleProfile.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="RocherAiguhilleProfile.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/SKIDEFOND%20photo%20internet.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">SKIDEFOND photo internet.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="SKIDEFOND%20photo%20internet.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/SanctuaireFace.png">
+                                           </div>
+                                           <div class="col-12 col-md-7">SanctuaireFace.png</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="SanctuaireFace.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/Sante-burgomcollaslug.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">Sante-burgomcollaslug.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="Sante-burgomcollaslug.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/ViergeFace.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">ViergeFace.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="ViergeFace.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/ViergePlace.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">ViergePlace.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="ViergePlace.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/Vinyl-Record-and-Cover-Presentation-Mock-up-lg.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">Vinyl-Record-and-Cover-Presentation-Mock-up-lg.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="Vinyl-Record-and-Cover-Presentation-Mock-up-lg.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/cuisine%20photo%20internet.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">cuisine photo internet.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="cuisine%20photo%20internet.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/image.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">image.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="image.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/lac-bleu%20photo%20internet.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">lac-bleu photo internet.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="lac-bleu%20photo%20internet.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/logo.png">
+                                           </div>
+                                           <div class="col-12 col-md-7">logo.png</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="logo.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/photo%20internet%20estables.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">photo internet estables.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="photo%20internet%20estables.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/photo%20internet.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">photo internet.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="photo%20internet.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/photo%20internet2.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">photo internet2.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="photo%20internet2.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/riva%20message%201.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">riva message 1.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="riva%20message%201.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/spa%20photo%20internet.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">spa photo internet.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="spa%20photo%20internet.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/village%20photo%20internet.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">village photo internet.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="village%20photo%20internet.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                              <li class="file row">
+                                           <div class="col-12 col-md-3">
+                                               <img src="../../uploads/village.jpg">
+                                           </div>
+                                           <div class="col-12 col-md-7">village.jpg</div>
+                                           <div class="col-12 col-md-2">
+                                               <a href="village.html" class="delete">Supprimer</a>
+                                           </div>
+                                       </li>
+                                                                          </ul>
+                               </div>
+                           </div>
+                           
+                          
+                            
+                            
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <!-- /.conainer-fluid -->
+                
+            </main>
+
+        </div>
+        
+        <script type="text/javascript" src="../js/plupload/plupload.full.min.js"></script>
+        <script type="text/javascript">
+            var uploader = new plupload.Uploader({
+                runtimes : 'html5',
+                containes : 'uploader',
+                browse_button : 'browse',
+                drop_element: "droparea",
+                url : 'uploader.php',
+                multipart : true,
+                urlstream_upload : true,
+                resize: {width: 1280, height: 720, quality: 90},
+                filters : {
+                    mime_types : [
+                        {title : 'Images', extensions : 'jpg,gif,jpeg,png'}
+                    ],
+                    max_file_size : "2M",
+                    prevent_duplicates : true,
+                }
+            });
+            
+            uploader.init();
+            
+            uploader.bind('FilesAdded', function(up, files){
+                var filelist = $('#filelist');
+                for(var i in files){
+                    var file = files[i];
+                    filelist.prepend('<li id="'+file.id+'" class="file row"><div class="col-12 col-md-8">'+file.name+'</div><div class="progressbar col-12 col-md-2"><div class="progress"></div></div></div></li>');
+                }
+                $("#droparea").removeClass('is-hovered');
+                uploader.start(); 
+                uploader.refresh();
+            });
+            
+            uploader.bind("UploadProgress", function(up, file){
+                $("#"+file.id).find('.progress').css('width', file.percent+'%');
+            });
+            
+            uploader.bind("FileUploaded", function(up, file, response){
+                data = $.parseJSON(response.response);
+                if(data.error == true){
+                    window.alert(data.message);
+                } else {
+                    //à mettre quand c'est bon, genre supprimer la progress bar
+                    $('#'+file.id).replaceWith(data.html);
+                }
+            });
+            
+            $("#droparea").bind({
+                dragover : function(e){
+                    $(this).addClass('is-hovered');
+                },
+                dragleave : function(e){
+                    $(this).removeClass('is-hovered');
+                }
+            });
+            
+            uploader.bind("Error", function(up, err){
+                window.alert(err.message);
+                $("#droparea").removeClass("is-hovered");
+                uploader.refresh();
+            });
+            
+            //suppression 
+            $(".delete").on('click', function(e){
+                e.preventDefault();
+                if(confirm('Voulez-vous réellement supprimer ce fichier ?')){
+                    $.get('uploader.html', {action: 'delete', file : $(this).attr('href')});
+                    $(this).parent().parent().slideUp();
+                    //ajouter suppression de la div;
+                }
+            });
+            
+        </script>
+        
+
+        <footer class="app-footer">
+            <span><a href="http://coreui.io/">CoreUI</a> © 2017 creativeLabs.</span>
+            <span class="ml-auto">Powered by <a href="http://coreui.io/">CoreUI</a></span>
+        </footer>
+
+        <!-- Bootstrap and necessary plugins -->
+        <script src="../../js/popper.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/pace.min.js"></script>
+
+        <!-- CoreUI main scripts -->
+
+        <script src="../js/app.js"></script>
+
+        <!-- Plugins and scripts required by this views -->
+
+
+    </body>
+
+<!-- Mirrored from web-week-2017-diablo.tp.mmi-lepuy.fr/admin/pages/image-uploader-page.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Dec 2017 11:58:56 GMT -->
+</html>
+
